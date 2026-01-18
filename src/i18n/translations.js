@@ -5,10 +5,9 @@ export const resources = {
         home: "Accueil",
         about: "À propos",
         programs: "Programmes",
-        contact: "Contact"
-      },
-
-      home: {
+        contact: "Contact",
+        },
+    home: {
         slider: {
           slide1: {
             title: "Bienvenue à l'École Internationale Chinoise",
@@ -232,7 +231,7 @@ export const resources = {
         }
       },
 
-        footer: {
+       footer: {
         contactTitle: "Contact",
         phone: "Téléphones",
         whatsapp: "Whatsapp",
@@ -241,7 +240,8 @@ export const resources = {
         address: "138, Rue Eugène Etienne, Plateau Centre ville, Brazzaville",
         web: "Web",
         tiktok: "TIK TOK : @beau_compus_eic",
-        partners: "Nos Partenaires"
+        partners: "Nos Partenaires",
+        legal: "Tous droits réservés"
       },
 
       
@@ -337,7 +337,18 @@ export const resources = {
         "Prix aux meilleurs élèves."
       ],
       pricingTitle: "💰 Tarifs Scolaires 2025–2026",
-      tableHeaders: ["Niveau", "Inscription", "Mensuel", "Annuel"],
+      tableHeaders: ["Désignation", "Niveau", "Inscription", "Mensuel", "Annuel"],
+      tableBody: [
+        ["Garderie", "Maternelle", "35 000 F", "40 000 F", "380 000 F"],
+        ["P1–P3", "Primaire", "35 000 F", "40 000 F", "380 000 F"],
+        ["CP–CM1", "Primaire", "35 000 F", "40 000 F", "380 000 F"],
+        ["CM2", "Primaire", "35 000 F", "50 000 F", "475 000 F"],
+        ["6è–4è", "Collège", "35 000 F", "60 000 F", "570 000 F"],
+        ["3è", "Collège", "40 000 F", "65 000 F", "617 000 F"],
+        ["Seconde", "Lycée", "40 000 F", "70 500 F", "665 500 F"],
+        ["Première", "Lycée", "40 000 F", "80 000 F", "760 000 F"],
+        ["Terminale", "Lycée", "40 000 F", "100 000 F", "950 000 F"]
+      ],
       
       // Table row labels
       rowGarderie: "Garderie",
@@ -368,11 +379,11 @@ export const resources = {
       children: "enfants ou plus",
       benefit: "bénéficient",
       discountPercent: "d'une remise de 10 %",
-      onMonthlyFees: "sur les frais mensuels."
+      onMonthlyFees: "sur les frais mensuels.",
+      note: "📌 Frais supplémentaires : DETAI (10 000 F), Noël (10 000 F), Excursion (3 000 F), Assurance (1 000 F)."
     }
   }
   },
-
   en: {
     translation: {
       menu: {
@@ -381,8 +392,7 @@ export const resources = {
         programs: "Programs",
         contact: "Contact"
       },
-
-      home: {
+    home: {
         slider: {
           slide1: {
             title: "Welcome to the Chinese International School",
@@ -402,27 +412,27 @@ export const resources = {
           },
           slide5: {
             title: "Cultural Immersion",
-            description: "Celebrating Chinese and French traditions."
+            description: "Celebration of Chinese and French traditions."
           }
         },
         schoolName: "CHINESE INTERNATIONAL SCHOOL",
-        motto: "(Work – Rigor – Success)",
+        motto: "(Work – Discipline – Success)",
         description:
-          "A suitable environment with modern physical infrastructure and specific educational tools to give every learner the means to reach their full academic and social potential.",
+          "A suitable environment with modern infrastructure and educational tools to help each learner reach their full academic and social potential.",
 
         overlay: {
           line1: "A modern and special school,",
-          line2: "High-quality teaching,",
+          line2: "Quality education,",
           line3: "Guaranteed employability,",
-          line4: "A professional future ensured for our children."
+          line4: "A secure professional future for our children."
         },
 
         particularities: {
-          title: "Our Particularities:",
-          p1: "✅ Organization of summer camps in China",
-          p2: "✅ Organization of Chinese language tests for middle and high school students",
-          p3: "✅ Implementation of professional tracks facilitating employability",
-          p4: "✅ Training of multi-skilled elite for Sino-Congolese societies"
+          title: "Our strengths:",
+          p1: "✅ Organization of holiday camps in China",
+          p2: "✅ Chinese language tests for middle and high school students",
+          p3: "✅ Professional programs facilitating employability",
+          p4: "✅ Training a multi-skilled elite for Sino-Congolese companies"
         },
 
         Icons: {
@@ -436,21 +446,21 @@ export const resources = {
           title: "EXTRACURRICULAR ACTIVITIES",
           subtitle: "Discover our latest activities",
           newsTitle: "WORLD NEWS",
-          newsText: "Visit of a Chinese delegation to our institution"
+          newsText: "Visit of a Chinese delegation to our school"
         },
 
         title: "OUR INSTITUTION",
         welcome: "Welcome to the Chinese International School",
         subtitle: "Cultivating excellence and cultural diversity",
         history:
-          "Founded with the aim of training the leaders of tomorrow, our school was born from a clear vision: providing quality, accessible, and forward-looking education. Since its creation, the institution has been committed to supporting each student in their intellectual, moral, and social development.",
+          "Founded with the vision of shaping tomorrow’s leaders, our school provides high-quality and accessible education.",
         mission:
-          "Our mission is to educate responsible citizens, open to the world, with solid academic, cultural, and human skills.",
+          "Our mission is to educate responsible global citizens with strong academic and cultural values.",
 
         events: {
-          title: "CEREMONIES & EVENTS",
+          title: "EVENTS & CEREMONIES",
           desc:
-            "Discover recent events, cultural celebrations, and activities organized by the institution."
+            "Discover recent events, cultural celebrations, and activities organized by the school."
         },
 
         admission: {
@@ -461,10 +471,12 @@ export const resources = {
         location: {
           title: "Our Location",
           address: "138, Rue Eugène Etienne",
-          city: "Plateau Downtown, Brazzaville",
+          city: "Plateau City Center, Brazzaville",
           phone: "05 345 66 66 / 06 615 66 66"
         }
       },
+
+      
 
       common: {
         learnMore: "Learn more",
@@ -489,336 +501,361 @@ export const resources = {
             "Graduation Ceremony",
             "Calligraphy Class",
             "Chinese New Year Celebration",
-            "Educational Field Trip to the Museum",
-            "Class Activity",
-            "School Life",
-            "Cultural Exchange",
-            "Educational Environment",
-            "School Logo",
-            "School Campus"
+            "Educational Museum Trip",
+            "Classroom activity",
+            "School life",
+            "Cultural exchange",
+            "Educational environment",
+            "School logo",
+            "School campus"
           ]
         },
         videos: {
           subtitle: "Recent Videos",
-          unsupported: "Your browser does not support the video tag.",
+          unsupported: "Your browser does not support video playback.",
           items: [
-            { title: "School Presentation", description: "Discover our activities." },
-            { title: "Sports Event", description: "Competition summary." },
-            { title: "Cultural Celebration", description: "Our students showcase their talents." },
-            { title: "Chinese Language Class", description: "Students learning Chinese" },
-            { title: "School Activities", description: "Daily school activities" },
-            { title: "Educational Program", description: "Teaching methods" },
-            { title: "School Animation", description: "Educational activities" },
-            { title: "Speaking Chinese", description: "Chinese language practice" },
-            { title: "Birthday Celebration", description: "Student celebrations" },
-            { title: "Parents Meeting", description: "Meeting between school and parents" },
-            { title: "Sports Activities", description: "Physical activities" },
-            { title: "Student Behavior", description: "Discipline and values" },
-            { title: "School Presentation", description: "Institution presentation" },
-            { title: "Uniform Distribution", description: "Uniform handout" }
+            {
+              title: "School Presentation",
+              description: "Discover our activities."
+            },
+            {
+              title: "Sports Event",
+              description: "Competition highlights."
+            },
+            {
+              title: "Cultural Celebration",
+              description: "Our students showcase their talents."
+            },
+             { title: "Chinese language class", description: "Students learning Chinese" },
+         { title: "School activities", description: "Daily school activities" },
+         { title: "Educational program", description: "Teaching methods" },
+         { title: "School animation", description: "Educational animation" },
+          { title: "Speaking Chinese", description: "Chinese speaking practice" },
+          { title: "Birthday celebration", description: "Students celebration" },
+          { title: "Parent meeting", description: "School and parents meeting" },
+         { title: "Sports activities", description: "Physical activities" },
+         { title: "Student behavior", description: "Discipline and values" },
+         { title: "School presentation", description: "Presentation of the school" },
+         { title: "Polo distribution", description: "Uniform distribution" }
           ]
         },
         social: {
           title: "Follow us on social media!",
-          description: "Stay informed about all our events and news."
+          description:
+            "Stay informed about all our events and news."
         }
       },
 
-      enseignement: {
+        enseignement: {
         title: "CHINESE INTERNATIONAL SCHOOL",
-        slogan: "Openness, Excellence, and Innovation.",
+        slogan: "Openness, Excellence and Innovation.",
         subtitleProgram: "Educational Program:",
         subtitleSchool: "Modern and secure school:",
-
-        programme1: "Expanded Congolese Program",
-        programme2: "Law, Economics and Entrepreneurship Classes in High School",
-        programme3: "Introduction to Drone Handling in High School",
-        programme4: "Technology Classes in Middle School",
-        programme5: "Computer Introduction from CE1",
-        programme6: "Chinese Classes from Kindergarten",
-        programme7: "Chinese and English Clubs",
-        programme8: "Wushu Practice",
+},
+        programme1: "Enhanced Congolese curriculum",
+        programme2: "Law, Economics and Entrepreneurship courses in High School",
+        programme3: "Introduction to Drone handling in High School",
+        programme4: "Technology courses in Middle School",
+        programme5: "Introduction to computer science from CE1",
+        programme6: "Chinese courses from kindergarten",
+        programme7: "Chinese and English clubs",
+        programme8: "Wushu practice",
 
         description:
-          "Our institution provides a modern, secure environment conducive to intellectual, cultural, and sporting development of students."
+          "Our institution offers a modern, secure environment conducive to students' intellectual, cultural and athletic development."
       },
 
-      ecoleModerne: {
+       ecoleModerne: {
         title: "Modern and Secure School",
-        subtitle: "A setting conducive to learning and development.",
+        subtitle: "An environment conducive to learning and personal development.",
 
-        item1: "🤝 Dynamic teaching team",
-        item2: "💡 Continuing education workshops for all staff",
+        item1: "🤝 Dynamic teaching staff",
+        item2: "💡 Continuous training workshops for all staff",
         item3: "🎓 Students trained to enter Chinese universities",
         item4: "📹 School under video surveillance",
-        item5: "⚽ Spacious yard with playground",
+        item5: "⚽ Spacious courtyard with a playground",
         item6: "❄️ Air-conditioned classrooms",
-        item7: "👨‍👩‍👧‍👦 Limited-size classrooms",
-        item8: "✏️ Single-seat desks",
-        item9: "🔬 Research lab and arts gallery",
+        item7: "👨‍👩‍👧‍👦 Small class sizes",
+        item8: "✏️ Individual white desks",
+        item9: "🔬 Research laboratory and art gallery",
         item10: "🏆 Awards for top students",
         item11: "📚 Library and computer room",
-        item12: "🌐 Internet – Wi-Fi",
+        item12: "🌐 Internet connection – WiFi",
         item13: "食堂 Canteen with adapted menus",
 
-        values: "We teach respect, tolerance, and solidarity."
+        values: "We teach respect, tolerance and solidarity."
       },
 
-      pieces: {
-        headerTitle: "We teach respect, tolerance, and solidarity",
-        title: "Documents required for registration/re-registration",
+        pieces: {
+        headerTitle: "We teach respect, tolerance and solidarity",
+        title: "Documents required for registration / re-registration",
 
-        doc1: "1 registration/re-registration form",
-        doc2: "1 photocopy of birth certificate (Congolese or foreign)",
-        doc3: "2 ID photos",
-        doc4: "1 copy of CEPE/BEPC results",
-        doc5: "1 khaki envelope per child",
+        doc1: "1 registration / re-registration form",
+        doc2: "1 copy of birth certificate (Congolese, foreigners)",
+        doc3: "2 passport photos",
+        doc4: "1 copy of CEPE / BEPC success certificate",
+        doc5: "1 brown envelope per child",
         doc6: "1 attendance certificate",
-        doc7: "1 certificate of no fees owed from previous school",
-        doc8: "1 photocopy of passport, ID, or consular card of a parent",
+        doc7: "1 certificate of no outstanding fees from previous school",
+        doc8: "1 copy of passport, ID card or consular card of one parent",
         doc9: "1 school certificate for new students",
-        doc10: "1 medical certificate of non-contagion, proving mandatory vaccinations",
-        doc11: "1 ream of A4 paper",
+        doc10: "1 medical certificate of non-contagion confirming mandatory vaccinations",
+        doc11: "1 pack of A4 paper",
         doc12: "2 boxes of chalk (white and colored)",
         doc13: "1 roll of toilet paper (Preschool and Primary)",
 
         specialTitle: "For divorced or separated legal guardians:",
         specialDoc:
-          "1 copy of divorce judgment / conciliation order / non-conciliation order / document specifying custody arrangements signed by both legal guardians.",
+          "1 copy of divorce judgment / conciliation or non-conciliation order / document specifying child custody arrangements (signed by both legal guardians).",
 
         helpBox: {
-          title: "Need Help?",
-          description: "Contact the office for questions regarding document legalization."
+          title: "Need help?",
+          description: "Contact the secretary's office for any questions about document legalization."
         }
       },
 
-      footer: {
-        contactTitle: "Contact",
-        phone: "Phones",
-        whatsapp: "Whatsapp",
-        email: "Email",
-        addressTitle: "Address",
-        address: "138, Rue Eugène Etienne, Plateau Downtown, Brazzaville",
-        web: "Web",
-        tiktok: "TIK TOK: @beau_compus_eic",
-        partners: "Our Partners"
+       footer: {
+         contactTitle: "Contact",
+         phone: "Phones",
+         whatsapp: "Whatsapp",
+         email: "Email",
+         addressTitle: "Address",
+         address: "138, Rue Eugène Etienne, Plateau City Center, Brazzaville",
+         web: "Website",
+         tiktok: "TIK TOK: @beau_compus_eic",
+         partners: "Our Partners",
+         legal: "All rights reserved"
       },
 
-      contact: {
-        description: "You can send us a message through this form.",
-        name: "Your Name",
-        email: "Your Email",
-        message: "Your Message",
+       contact: {
+        description: "You can send us a message via this form.",
+        name: "Your name",
+        email: "Your email",
+        message: "Your message",
         send: "Send",
         success: "Message sent successfully ✅",
-        error: "Error sending message ❌"
+        error: "Error while sending ❌"
       },
 
-      about: {
-        heroAlt: "Playground of the Chinese International School",
-        logoAlt: "Chinese International School Logo",
+       about: {
+      heroAlt: "Playground of the Chinese International School",
+      logoAlt: "Chinese International School Logo",
 
-        title: "Welcome to the Chinese International School",
-        slogan: "“We teach respect, tolerance, and solidarity”",
+      title: "Welcome to the Chinese International School",
+      slogan: "“We teach respect, tolerance and solidarity”",
 
-        missionTitle: "🎯 Our Mission",
-        mission: {
-          li1: "High-quality teaching adapted to Congolese programs enriched by Chinese methods.",
-          li2: "Guaranteed employability through local professional tracks.",
-          li3: "Professional future ensured for entering Chinese or African universities.",
-          li4: "Safe and stimulating environment for overall student development."
-        },
-
-        infrastructureTitle: "🏗️ Our Infrastructure",
-        infrastructure: {
-          li1: "Air-conditioned classrooms with single-seat desks.",
-          li2: "Computer room, library, research lab, and arts gallery.",
-          li3: "Spacious yard with playground, slide, and green space.",
-          li4: "Wi-Fi internet connection.",
-          li5: "Clubs: Chinese, English, Wushu, Music."
-        },
-
-        teamTitle: "👨‍🏫 Our Teaching Team",
-        teamText:
-          "Dynamic teachers, regularly trained, dedicated to pedagogical excellence and student safety (video surveillance).",
-
-        contactTitle: "📍 Contact",
-        contact: {
-          addressLabel: "Address:",
-          address: "138, Rue Eugène Etienne, Plateau Downtown, Brazzaville",
-          phoneLabel: "Phones:",
-          phone: "05 345 66 66 / 06 615 66 66 (WhatsApp)",
-          emailLabel: "Email:",
-          email: "ecoleinternationalec@gmail.com"
-        },
-
-        registrationTitle: "📄 Registration",
-        registrationText:
-          "Required documents: registration form, photos, birth certificate, medical certificate, non-fee certificate. For divorced parents: judgment + custody agreement.",
-
-        discount: "💡 Family discount: -10% for families with 3 children.",
-        discountNote: "Note: Parents with",
-        children: "children or more",
-        benefit: "receive",
-        discountPercent: "a 10% discount",
-        onMonthlyFees: "on monthly fees."
+      missionTitle: "🎯 Our Mission",
+      mission: {
+        li1: "High-quality education adapted to Congolese programs and enriched by Chinese teaching methods.",
+        li2: "Guaranteed employability through local professional programs.",
+        li3: "A secure professional future with access to Chinese or African universities.",
+        li4: "A safe and stimulating environment for the overall development of each student."
       },
 
-      programs: {
-        heroAlt: "Students in class at the Chinese International School",
-        logoAlt: "Chinese International School Logo",
-        title: "Our Educational Programs",
-        intro: "Comprehensive, innovative programs adapted to every age to train the leaders of tomorrow.",
-        featureTitle: "📚 Expanded Congolese Program",
-        featureText: "Enhanced with modern subjects from kindergarten to high school.",
-        maternelleTitle: "🧒 Kindergarten & Primary (Nursery to CM2)",
-        maternelleList: [
-          "Computer classes from kindergarten.",
-          "Introduction to drone handling from CE1.",
-          "Chinese and English clubs.",
-          "Wushu practice.",
-          "Supervised artistic and sports activities."
-        ],
-        lyceeTitle: "🎓 Middle & High School (6th to 12th Grade)",
-        lyceeList: [
-          "Law, Economics, and Entrepreneurship classes.",
-          "Technology classes.",
-          "Preparation for DETAI exams.",
-          "Local professional tracks.",
-          "Organization of Chinese language tests."
-        ],
-        particularitiesTitle: "✨ Our Particularities",
-        particularitiesList: [
-          "Summer camps in China.",
-          "Professional tracks for local employability.",
-          "Training of multi-skilled elite for Sino-Congolese societies.",
-          "Awards for top students."
-        ],
-        pricingTitle: "💰 School Fees 2025–2026",
-        tableHeaders: ["Level", "Registration", "Monthly", "Annual"],
+      infrastructureTitle: "🏗️ Our Infrastructure",
+      infrastructure: {
+        li1: "Air-conditioned classrooms with individual desks.",
+        li2: "Computer room, library, research laboratory and art gallery.",
+        li3: "Spacious playground with games, slide and green area.",
+        li4: "Wi-Fi internet connection.",
+        li5: "Clubs: Chinese, English, Wushu, music."
+      },
 
-        rowGarderie: "Nursery",
-        rowP1P3: "P1, P2, P3",
-        rowCPCE: "CP, CE, CM1",
-        rowCM2: "CM2",
-        row6e5e4e: "6th, 5th, 4th",
-        row3e: "3rd",
-        rowSeconde: "10th Grade",
-        rowPremiere: "11th Grade",
-        rowTerminale: "12th Grade",
+      teamTitle: "👨‍🏫 Our Teaching Staff",
+      teamText:
+        "Dynamic teachers, regularly trained, dedicated to educational excellence and student safety (video surveillance).",
 
-        descInscription: "Registration fees (新生)",
-        descReinscription: "Re-registration fees (旧生)",
-        descSupplementaires: "Additional fees (学杂费)",
-        descExamens: "State exams (国考费)",
-        descFeteNoel: "Christmas Party (圣诞派对)",
-        descSeptembre: "September school fees (9月学费)",
-        descMensuels: "Monthly fees (月学费)",
-        descAnnuels: "Annual tuition (学费合计)",
+      contactTitle: "📍 Contact",
+      contact: {
+        addressLabel: "Address:",
+        address: "138 Eugène Etienne Street, Plateau City Center, Brazzaville",
+        phoneLabel: "Phones:",
+        phone: "05 345 66 66 / 06 615 66 66 (WhatsApp)",
+        emailLabel: "Email:",
+        email: "ecoleinternationalec@gmail.com"
+      },
 
-        additionalFeesNote: "11,500 **",
+      registrationTitle: "📄 Registration",
+      registrationText:
+        "Required documents: registration form, photos, birth certificate, medical certificate, certificate of good conduct. For divorced parents: court judgment + custody agreement.",
 
-        discountNote: "Note: Parents with",
-        children: "children or more",
-        benefit: "receive",
-        discountPercent: "a 10% discount",
-        onMonthlyFees: "on monthly fees."
-      }
-    }
+      discount: "💡 Family discount: -10% for families with 3 dependent children.",
+      discountNote: "N.B : Parents with",
+      children: "children or more",
+      benefit: "benefit from",
+      discountPercent: "a 10% discount",
+      onMonthlyFees: "on monthly fees."
+    },
+
+    programs: {
+      heroAlt: "Students in class at the International Chinese School",
+      logoAlt: "International Chinese School Logo",
+      title: "Our Educational Programs",
+      intro: "Comprehensive, innovative programs adapted to every age to train the leaders of tomorrow.",
+      featureTitle: "📚 Expanded Congolese Program",
+      featureText: "Enriched with modern subjects from kindergarten to high school.",
+      maternelleTitle: "🧒 Kindergarten & Primary (Nursery to Grade 5)",
+      maternelleList: [
+        "Computer classes starting from kindergarten.",
+        "Introduction to drone handling from Grade 2.",
+        "Chinese and English clubs.",
+        "Wushu practice.",
+        "Supervised artistic and sports activities."
+      ],
+      lyceeTitle: "🎓 Middle & High School (Grades 6 to 12)",
+      lyceeList: [
+        "Law, Economics, and Entrepreneurship courses.",
+        "Technology courses.",
+        "Preparation for DETAI exams.",
+        "Local vocational tracks.",
+        "Organization of Chinese language tests."
+      ],
+      particularitiesTitle: "✨ Our Special Features",
+      particularitiesList: [
+        "Summer camps in China.",
+        "Vocational tracks for local employability.",
+        "Training of multi-skilled elite for Sino-Congolese companies.",
+        "Awards for top students."
+      ],
+      pricingTitle: "💰 School Fees 2025–2026",
+      tableHeaders: ["Level", "Registration", "Monthly", "Annual"],
+      tableBody: [
+        ["Nursery", "Kindergarten", "35 000 F", "40 000 F", "380 000 F"],
+        ["P1–P3", "Primary", "35 000 F", "40 000 F", "380 000 F"],
+        ["CP–CM1", "Primary", "35 000 F", "40 000 F", "380 000 F"],
+        ["CM2", "Primary", "35 000 F", "50 000 F", "475 000 F"],
+        ["6–4", "Middle School", "35 000 F", "60 000 F", "570 000 F"],
+        ["3", "Middle School", "40 000 F", "65 000 F", "617 000 F"],
+        ["Grade 10", "High School", "40 000 F", "70 500 F", "665 500 F"],
+        ["Grade 11", "High School", "40 000 F", "80 000 F", "760 000 F"],
+        ["Grade 12", "High School", "40 000 F", "100 000 F", "950 000 F"]
+      ],
+      
+      // Table row labels
+      rowGarderie: "Nursery",
+      rowP1P3: "P1, P2, P3",
+      rowCPCE: "CP, CE, CM1",
+      rowCM2: "CM2",
+      row6e5e4e: "Grades 6–4",
+      row3e: "Grade 3",
+      rowSeconde: "Grade 10",
+      rowPremiere: "Grade 11",
+      rowTerminale: "Grade 12",
+      
+      // Table descriptions (Chinese text in parentheses)
+      descInscription: "Registration fees (新生)",
+      descReinscription: "Re-registration fees (旧生)",
+      descSupplementaires: "Additional fees (学杂费)",
+      descExamens: "STATE Exams fees (国考费)",
+      descFeteNoel: "Christmas Party (圣诞派对)",
+      descSeptembre: "September school fees (9月学费)",
+      descMensuels: "Monthly fees (月学费)",
+      descAnnuels: "Annual tuition (学费合计)",
+      
+      // Note for additional fees
+      additionalFeesNote: "11 500 **",
+      
+      // Discount text
+      discountNote: "N.B : Parents with",
+      children: "children or more",
+      benefit: "benefit from",
+      discountPercent: "a 10% discount",
+      onMonthlyFees: "on monthly fees.",
+      note: "📌 Additional fees: DETAI (10,000 F), Christmas (10,000 F), Excursion (3,000 F), Insurance (1,000 F)."
+  }
   },
-
   zh: {
     translation: {
       menu: {
         home: "首页",
         about: "关于我们",
         programs: "课程",
-        contact: "联系"
+        contact: "联系我们"
       },
-
-      home: {
+    home: {
         slider: {
           slide1: {
             title: "欢迎来到国际中文学校",
             description: "探索我们独特的双语教育环境。"
           },
           slide2: {
-            title: "我们的现代校园",
-            description: "一个专注于学习和中国文化的空间。"
+            title: "我们的现代化校园",
+            description: "一个专注于学习和中国文化体验的空间。"
           },
           slide3: {
             title: "课外活动",
-            description: "体育、艺术和探索，丰富孩子的成长。"
+            description: "体育、艺术和发现，丰富您的孩子。"
           },
           slide4: {
             title: "双语课程",
-            description: "法语和中文的学术卓越。"
+            description: "法语和中文的卓越学术教育。"
           },
           slide5: {
             title: "文化沉浸",
-            description: "庆祝中法传统文化。"
+            description: "庆祝中国和法国的传统文化。"
           }
         },
         schoolName: "国际中文学校",
-        motto: "（勤奋–严谨–成功）",
+        motto: "（勤奋 · 严谨 · 成功）",
         description:
-          "通过现代化的物理设施和特定的教育工具，为每个学习者提供实现学术和社会潜力的途径。",
+          "现代化的教学环境，配备先进的教学设施和专业工具，帮助学生充分发挥潜力。",
 
         overlay: {
-          line1: "一所现代而特别的学校，",
-          line2: "高质量教学，",
+          line1: "一所现代而独特的学校，",
+          line2: "高质量的教育，",
           line3: "确保就业能力，",
-          line4: "为我们的孩子保障未来职业发展。"
+          line4: "为孩子们提供光明的未来。"
         },
 
         particularities: {
-          title: "我们的特点：",
-          p1: "✅ 在中国组织暑期营",
-          p2: "✅ 为中学生和高中生组织中文水平测试",
-          p3: "✅ 建立有助于就业的职业方向",
-          p4: "✅ 培养中刚社会的多才精英"
+          title: "我们的特色：",
+          p1: "✅ 组织学生赴中国参加夏令营",
+          p2: "✅ 为中学生组织中文考试",
+          p3: "✅ 建立有助于就业的职业课程",
+          p4: "✅ 培养中刚企业所需的复合型精英"
         },
 
         Icons: {
           title: "我们的课程",
           p1: "教学",
-          p2: "现代化和安全的学校",
+          p2: "现代化安全学校",
           p3: "注册所需文件"
         },
 
         activities: {
           title: "课外活动",
           subtitle: "了解我们的最新活动",
-          newsTitle: "全球新闻",
-          newsText: "中国代表团访问我们的学校"
+          newsTitle: "国际新闻",
+          newsText: "中国代表团访问我校"
         },
 
         title: "我们的学校",
         welcome: "欢迎来到国际中文学校",
-        subtitle: "培养卓越和文化多样性",
+        subtitle: "培养卓越与文化多样性",
         history:
-          "我们的学校旨在培养未来的领导者，诞生于一个明确的愿景：提供优质、可及且面向未来的教育。自成立以来，学校致力于陪伴每位学生的智力、道德和社会发展。",
+          "学校致力于提供高质量的国际教育，帮助学生全面发展。",
         mission:
-          "我们的使命是培养负责任、开放、拥有扎实学术、文化和人文能力的公民。",
+          "我们的使命是培养具有国际视野和社会责任感的学生。",
 
         events: {
-          title: "仪式与活动",
-          desc:
-            "了解学校近期的活动、文化庆典及组织的活动。"
+          title: "活动与庆典",
+          desc: "了解学校组织的最新活动和文化庆典。"
         },
 
         admission: {
           title: "快速入学",
-          subtitle: "为您的孩子进行注册。"
+          subtitle: "进行您孩子的注册。"
         },
 
         location: {
-          title: "我们的地址",
-          address: "138, Eugène Etienne 街",
-          city: "布拉柴维尔市中心高地",
+          title: "我们的位置",
+          address: "埃热纳·埃蒂安街 138 号",
+          city: "布拉柴维尔市中心高原区",
           phone: "05 345 66 66 / 06 615 66 66"
         }
       },
+
+     
 
       common: {
         learnMore: "了解更多",
@@ -831,256 +868,282 @@ export const resources = {
         documents: "文件"
       },
 
-      culture: {
+       culture: {
         hero: {
           title: "学校画廊与文化",
           description:
-            "通过我们的发布重温学校生活的精彩瞬间。"
+            "通过我们的发布内容，重温学校生活中的精彩瞬间。"
         },
         gallery: {
           subtitle: "活动照片",
           items: [
             "毕业典礼",
             "书法课程",
-            "中国新年庆典",
-            "博物馆教育实地考察",
-            "课堂活动",
+            "中国新年庆祝活动",
+            "博物馆教学参观",
+             "课堂活动",
             "校园生活",
             "文化交流",
             "教育环境",
             "学校标志",
-            "学校校园"
+            "校园"
           ]
         },
         videos: {
           subtitle: "最新视频",
-          unsupported: "您的浏览器不支持视频标签。",
+          unsupported: "您的浏览器不支持视频播放。",
           items: [
-            { title: "学校介绍", description: "了解我们的活动。" },
-            { title: "体育活动", description: "比赛总结。" },
-            { title: "文化庆典", description: "学生展示才艺。" },
-            { title: "中文课程", description: "学生学习中文" },
-            { title: "学校活动", description: "日常校园活动" },
-            { title: "教育课程", description: "教学方法" },
-            { title: "校园活动", description: "教育活动" },
-            { title: "中文口语", description: "中文实践" },
-            { title: "生日庆祝", description: "学生庆祝活动" },
-            { title: "家长会议", description: "学校与家长的会议" },
-            { title: "体育活动", description: "体育活动" },
-            { title: "学生行为", description: "纪律和价值观" },
-            { title: "学校介绍", description: "学校概况" },
-            { title: "校服发放", description: "分发校服" }
-          ]
+            {
+              title: "学校介绍",
+              description: "了解我们的活动。"
+            },
+            {
+              title: "体育活动",
+              description: "比赛精彩回顾。"
+            },
+            {
+              title: "文化庆典",
+              description: "学生们展示他们的才艺。"
+            },
+             { title: "中文课程", description: "学生学习中文" },
+        { title: "学校活动", description: "学校的日常活动" },
+        { title: "教育项目", description: "教学方法" },
+        { title: "校园动画", description: "教育动画" },
+        { title: "中文口语", description: "中文口语练习" },
+        { title: "生日庆祝", description: "学生生日庆祝活动" },
+        { title: "家长会议", description: "学校与家长的会议" },
+        { title: "体育活动", description: "体育锻炼活动" },
+        { title: "学生行为", description: "纪律与价值观" },
+        { title: "学校介绍", description: "学校的整体介绍" },
+        { title: "校服发放", description: "校服分发活动" }
+        ]
         },
         social: {
           title: "关注我们的社交媒体！",
-          description: "随时了解我们的活动和新闻。"
+          description:
+            "及时了解我们的所有活动和新闻。"
         }
       },
 
-      enseignement: {
-        title: "国际中文学校",
-        slogan: "开放、卓越与创新。",
-        subtitleProgram: "教育课程：",
-        subtitleSchool: "现代化和安全的学校：",
+       enseignement: {
+        title: "中法国际学校",
+        slogan: "开放 · 卓越 · 创新",
+        subtitleProgram: "教学项目：",
+        subtitleSchool: "现代化、安全的学校：",
 
-        programme1: "扩展的刚果课程",
-        programme2: "高中法律、经济与创业课程",
+        programme1: "强化的刚果课程",
+        programme2: "高中阶段法律、经济与创业课程",
         programme3: "高中无人机操作入门",
-        programme4: "中学科技课程",
-        programme5: "CE1开始计算机启蒙",
-        programme6: "幼儿园开始中文课程",
+        programme4: "初中技术课程",
+        programme5: "从CE1开始的信息技术启蒙",
+        programme6: "幼儿园起学习中文",
         programme7: "中文和英语俱乐部",
-        programme8: "武术练习",
+        programme8: "武术训练",
 
         description:
-          "学校提供现代、安全的环境，有利于学生的智力、文化和体育发展。"
+          "我们的学校提供现代、安全的环境，有利于学生的智力、文化和体育全面发展。"
       },
 
-      ecoleModerne: {
-        title: "现代安全学校",
-        subtitle: "有利于学习和成长的环境。",
+       ecoleModerne: {
+        title: "现代化、安全的学校",
+        subtitle: "有利于学习与成长的环境。",
 
         item1: "🤝 充满活力的教学团队",
-        item2: "💡 全体教职员工持续培训工作坊",
-        item3: "🎓 学生接受中国大学入学培训",
+        item2: "💡 为全体员工提供持续培训",
+        item3: "🎓 学生可进入中国大学深造",
         item4: "📹 校园视频监控",
-        item5: "⚽ 宽敞操场与运动场",
+        item5: "⚽ 宽敞的操场和运动场",
         item6: "❄️ 空调教室",
-        item7: "👨‍👩‍👧‍👦 限额班级",
-        item8: "✏️ 单人课桌",
-        item9: "🔬 研究实验室与美术馆",
-        item10: "🏆 优秀学生奖",
-        item11: "📚 图书馆与电脑室",
-        item12: "🌐 网络 – Wi-Fi",
-        item13: "食堂 提供适宜的餐饮",
+        item7: "👨‍👩‍👧‍👦 小班教学",
+        item8: "✏️ 单人白板课桌",
+        item9: "🔬 科研实验室与艺术画廊",
+        item10: "🏆 优秀学生奖励",
+        item11: "📚 图书馆与计算机室",
+        item12: "🌐 互联网连接 – 无线网络",
+        item13: "食堂 提供适合学生的餐饮",
 
-        values: "我们教授尊重、宽容和团结。"
+        values: "我们教授尊重、宽容与团结。"
       },
 
-      pieces: {
-        headerTitle: "我们教授尊重、宽容和团结",
-        title: "注册/重新注册所需文件",
+        pieces: {
+        headerTitle: "我们教授尊重、宽容与团结",
+        title: "报名 / 续报名所需材料",
 
-        doc1: "1份注册/重新注册表",
-        doc2: "1份出生证明复印件（刚果籍或外国籍）",
-        doc3: "2张身份证照片",
-        doc4: "1份CEPE/BEPC成绩单复印件",
-        doc5: "每个孩子1个卡其信封",
-        doc6: "1份出勤证明",
-        doc7: "1份前学校无欠费证明",
-        doc8: "1份父母护照、身份证或领事证件复印件",
-        doc9: "1份新生学籍证明",
-        doc10: "1份入学医疗健康证明，证明已接种必需疫苗",
-        doc11: "1包A4纸",
-        doc12: "2盒粉笔（白色和有色）",
-        doc13: "1卷卫生纸（学前及小学）",
+        doc1: "1 份报名 / 续报名表",
+        doc2: "1 份出生证明复印件（刚果籍及外国籍）",
+        doc3: "2 张证件照",
+        doc4: "1 份 CEPE / BEPC 成绩合格证明",
+        doc5: "每名儿童 1 个牛皮纸信封",
+        doc6: "1 份在校证明",
+        doc7: "1 份上一所学校无欠费证明",
+        doc8: "1 份父母一方的护照、身份证或领事证复印件",
+        doc9: "新生需提供 1 份在学证明",
+        doc10: "1 份入学时提交的无传染病及疫苗接种证明的体检报告",
+        doc11: "1 包 A4 纸",
+        doc12: "2 盒粉笔（白色和彩色）",
+        doc13: "1 卷卫生纸（学前班和小学）",
 
-        specialTitle: "对于离异或分居的法定监护人：",
+        specialTitle: "离异或分居的法定监护人：",
         specialDoc:
-          "1份离婚判决书/调解令/不调解令/注明孩子监护安排的文件（由双方监护人签字）。",
+          "1 份离婚判决书 / 调解或未调解裁定 / 说明儿童监护安排的文件（由双方监护人签署）。",
 
         helpBox: {
           title: "需要帮助？",
-          description: "如有文件认证问题，请联系学校办公室。"
+          description: "如需了解文件公证相关问题，请联系教务处。"
         }
       },
-
-      footer: {
-        contactTitle: "联系",
+       footer: {
+        contactTitle: "联系方式",
         phone: "电话",
-        whatsapp: "WhatsApp",
-        email: "电子邮件",
+        whatsapp: "Whatsapp",
+        email: "电子邮箱",
         addressTitle: "地址",
-        address: "138, Eugène Etienne 街，高地市中心，布拉柴维尔",
-        web: "网站",
-        tiktok: "抖音: @beau_compus_eic",
-        partners: "合作伙伴"
+        address: "刚果布拉柴维尔市高原市中心 Eugène Etienne 街 138 号",
+        web: "网络",
+        tiktok: "抖音 : @beau_compus_eic",
+        partners: "合作伙伴",
+        legal: "版权所有"
       },
 
-      contact: {
-        description: "您可以通过此表单给我们发送信息。",
+       contact: {
+        description: "您可以通过此表单向我们发送消息。",
         name: "您的姓名",
-        email: "您的电子邮件",
+        email: "您的邮箱",
         message: "您的信息",
         send: "发送",
-        success: "信息发送成功 ✅",
-        error: "发送失败 ❌"
+        success: "消息发送成功 ✅",
+        error: "发送时出错 ❌"
       },
 
       about: {
-        heroAlt: "国际中文学校操场",
-        logoAlt: "国际中文学校标志",
+      heroAlt: "中非国际学校操场",
+      logoAlt: "中非国际学校标志",
 
-        title: "欢迎来到国际中文学校",
-        slogan: "“我们教授尊重、宽容和团结”",
+      title: "欢迎来到中非国际学校",
+      slogan: "“我们教授尊重、宽容与团结”",
 
-        missionTitle: "🎯 我们的使命",
-        mission: {
-          li1: "优质教育，结合刚果课程与中国教学方法。",
-          li2: "通过本地职业课程确保就业能力。",
-          li3: "保证学生未来可进入中国或非洲大学。",
-          li4: "安全和激励的环境，促进学生全面发展。"
-        },
-
-        infrastructureTitle: "🏗️ 我们的设施",
-        infrastructure: {
-          li1: "空调教室，单人课桌。",
-          li2: "电脑室、图书馆、研究实验室与美术馆。",
-          li3: "宽敞操场，含运动场、滑梯和绿地。",
-          li4: "Wi-Fi 网络。",
-          li5: "俱乐部：中文、英语、武术、音乐。"
-        },
-
-        teamTitle: "👨‍🏫 我们的教学团队",
-        teamText:
-          "教师充满活力，定期培训，致力于教学质量与学生安全（视频监控）。",
-
-        contactTitle: "📍 联系",
-        contact: {
-          addressLabel: "地址：",
-          address: "138, Eugène Etienne 街，高地市中心，布拉柴维尔",
-          phoneLabel: "电话：",
-          phone: "05 345 66 66 / 06 615 66 66 (WhatsApp)",
-          emailLabel: "电子邮件：",
-          email: "ecoleinternationalec@gmail.com"
-        },
-
-        registrationTitle: "📄 注册",
-        registrationText:
-          "所需文件：注册表、照片、出生证明、医疗证明、无欠费证明。离异家长：判决书+监护协议。",
-
-        discount: "💡 家庭优惠：拥有3个孩子的家庭享受10%折扣。",
-        discountNote: "注：父母有",
-        children: "个或以上孩子",
-        benefit: "可享受",
-        discountPercent: "10%折扣",
-        onMonthlyFees: "每月学费折扣。"
+      missionTitle: "🎯 我们的使命",
+      mission: {
+        li1: "提供高质量教育，结合刚果课程并融入中国教学方法。",
+        li2: "通过本地职业课程保障学生就业。",
+        li3: "确保学生能够进入中国或非洲大学，拥有稳定的职业未来。",
+        li4: "为学生全面发展提供安全、积极的学习环境。"
       },
 
-      programs: {
-        heroAlt: "国际中文学校课堂上的学生",
-        logoAlt: "国际中文学校标志",
-        title: "我们的教育课程",
-        intro: "完整、创新且适合各年龄段的课程，培养未来的领导者。",
-        featureTitle: "📚 扩展刚果课程",
-        featureText: "从幼儿园到高中引入现代学科。",
-        maternelleTitle: "🧒 幼儿园 & 小学（托儿所到CM2）",
-        maternelleList: [
-          "幼儿园开始计算机课程。",
-          "CE1开始无人机操作入门。",
-          "中文和英语俱乐部。",
-          "武术练习。",
-          "有监督的艺术和体育活动。"
-        ],
-        lyceeTitle: "🎓 初中 & 高中（6年级至12年级）",
-        lyceeList: [
-          "法律、经济与创业课程。",
-          "科技课程。",
-          "DETAI考试准备。",
-          "本地职业课程。",
-          "中文水平测试组织。"
-        ],
-        particularitiesTitle: "✨ 我们的特色",
-        particularitiesList: [
-          "中国暑期营。",
-          "本地职业课程以提升就业能力。",
-          "培养中刚社会的多才精英。",
-          "优秀学生奖。"
-        ],
-        pricingTitle: "💰 2025–2026学年学费",
-        tableHeaders: ["年级", "注册费", "月费", "年费"],
+      infrastructureTitle: "🏗️ 我们的基础设施",
+      infrastructure: {
+        li1: "配备空调的独立课桌教室。",
+        li2: "计算机室、图书馆、科研实验室和艺术画廊。",
+        li3: "宽敞的操场，设有游乐设施、滑梯和绿化区。",
+        li4: "无线网络连接。",
+        li5: "俱乐部：中文、英语、武术、音乐。"
+      },
 
-        rowGarderie: "托儿所",
-        rowP1P3: "P1, P2, P3",
-        rowCPCE: "CP, CE, CM1",
-        rowCM2: "CM2",
-        row6e5e4e: "6,5,4年级",
-        row3e: "3年级",
-        rowSeconde: "10年级",
-        rowPremiere: "11年级",
-        rowTerminale: "12年级",
+      teamTitle: "👨‍🏫 我们的教师团队",
+      teamText:
+        "教师队伍充满活力，定期接受培训，致力于教学卓越和学生安全（视频监控）。",
 
-        descInscription: "注册费 (新生)",
-        descReinscription: "重新注册费 (旧生)",
-        descSupplementaires: "附加费用 (学杂费)",
-        descExamens: "国家考试 (国考费)",
-        descFeteNoel: "圣诞节活动 (圣诞派对)",
-        descSeptembre: "九月学费 (9月学费)",
-        descMensuels: "月费 (月学费)",
-        descAnnuels: "年费 (学费合计)",
+      contactTitle: "📍 联系方式",
+      contact: {
+        addressLabel: "地址：",
+        address: "布拉柴维尔市中心 Eugène Etienne 街 138 号",
+        phoneLabel: "电话：",
+        phone: "05 345 66 66 / 06 615 66 66（WhatsApp）",
+        emailLabel: "电子邮箱：",
+        email: "ecoleinternationalec@gmail.com"
+      },
 
-        additionalFeesNote: "11,500 **",
+      registrationTitle: "📄 报名",
+      registrationText:
+        "所需材料：报名表、照片、出生证明、体检证明、无违纪证明。离异家庭需提供法院判决和监护协议。",
 
-        discountNote: "注：父母有",
-        children: "个或以上孩子",
-        benefit: "可享受",
-        discountPercent: "10%折扣",
-        onMonthlyFees: "每月学费折扣。"
-      }
+      discount: "💡 家庭优惠：有 3 名在校子女的家庭可享受 10% 优惠。",
+      discountNote: "注意：有",
+      children: "名或更多子女的家长",
+      benefit: "可享受",
+      discountPercent: "10% 的折扣",
+      onMonthlyFees: "月费优惠。",
+      note: "📌 附加费用：DETAI (10 000 F)，圣诞节 (10 000 F)，游学 (3 000 F)，保险 (1 000 F)。"
+    },
+
+     programs: {
+      heroAlt: "国际中文学校的课堂上的学生",
+      logoAlt: "国际中文学校标志",
+      title: "我们的教学课程",
+      intro: "完整、创新且适合各年龄段的课程，培养未来领导者。",
+      featureTitle: "📚 完善的刚果课程",
+      featureText: "从幼儿园到高中，融合现代学科。",
+      maternelleTitle: "🧒 幼儿园 & 小学 (托儿到CM2)",
+      maternelleList: [
+        "幼儿园就开始计算机课程。",
+        "CE1开始无人机操作入门。",
+        "中文和英语俱乐部。",
+        "武术练习。",
+        "有指导的艺术和体育活动。"
+      ],
+      lyceeTitle: "🎓 初中 & 高中 (6至高三)",
+      lyceeList: [
+        "法律、经济与创业课程。",
+        "技术课程。",
+        "DETAI考试准备。",
+        "本地职业课程。",
+        "中文语言测试安排。"
+      ],
+      particularitiesTitle: "✨ 我们的特色",
+      particularitiesList: [
+        "中国夏令营。",
+        "本地就业职业课程。",
+        "培养中刚精英复合型人才。",
+        "颁发最佳学生奖。"
+      ],
+      pricingTitle: "💰 2025–2026学年学费",
+      tableHeaders: ["年级", "报名费", "每月", "每年"],
+      tableBody: [
+        ["托儿所", "幼儿园", "35 000 F", "40 000 F", "380 000 F"],
+        ["P1–P3", "小学", "35 000 F", "40 000 F", "380 000 F"],
+        ["CP–CM1", "小学", "35 000 F", "40 000 F", "380 000 F"],
+        ["CM2", "小学", "35 000 F", "50 000 F", "475 000 F"],
+        ["6–4", "初中", "35 000 F", "60 000 F", "570 000 F"],
+        ["3", "初中", "40 000 F", "65 000 F", "617 000 F"],
+        ["高二", "高中", "40 000 F", "70 500 F", "665 500 F"],
+        ["高一", "高中", "40 000 F", "80 000 F", "760 000 F"],
+        ["高三", "高中", "40 000 F", "100 000 F", "950 000 F"]
+      ],
+      
+      // 行标签
+      rowGarderie: "托儿所",
+      rowP1P3: "P1, P2, P3",
+      rowCPCE: "CP, CE, CM1",
+      rowCM2: "CM2",
+      row6e5e4e: "6–4",
+      row3e: "3",
+      rowSeconde: "高二",
+      rowPremiere: "高一",
+      rowTerminale: "高三",
+      
+      // 表格描述（括号中为中文）
+      descInscription: "报名费 (新生)",
+      descReinscription: "续报名费 (旧生)",
+      descSupplementaires: "杂费 (学杂费)",
+      descExamens: "国考费 (国考费)",
+      descFeteNoel: "圣诞派对 (圣诞派对)",
+      descSeptembre: "九月学费 (9月学费)",
+      descMensuels: "月费 (月学费)",
+      descAnnuels: "学年学费 (学费合计)",
+      
+      // 附加费用说明
+      additionalFeesNote: "11 500 **",
+      
+      // 折扣文本
+      discountNote: "注意：有",
+      children: "名或更多子女的家长",
+      benefit: "可享受",
+      discountPercent: "10% 的折扣",
+      onMonthlyFees: "月费优惠。",
+      note: "📌 附加费用：DETAI (10 000 F)，圣诞节 (10 000 F)，游学 (3 000 F)，保险 (1 000 F)。"
     }
+  }
   },
-
   ru: {
     translation: {
       menu: {
@@ -1089,116 +1152,116 @@ export const resources = {
         programs: "Программы",
         contact: "Контакты"
       },
-
-      home: {
+   
+    home: {
         slider: {
           slide1: {
             title: "Добро пожаловать в Международную Китайскую Школу",
-            description: "Откройте для себя нашу уникальную билингвальную образовательную среду."
+            description: "Откройте для себя нашу уникальную двуязычную образовательную среду."
           },
           slide2: {
-            title: "Наш современный кампус",
+            title: "Наш Современный Кампус",
             description: "Пространство, посвящённое обучению и китайской культуре."
           },
           slide3: {
-            title: "Внеклассные мероприятия",
-            description: "Спорт, искусство и открытия для обогащения вашего ребёнка."
+            title: "Внеклассные Мероприятия",
+            description: "Спорт, искусство и открытия для вашего ребёнка."
           },
           slide4: {
-            title: "Билингвальные программы",
-            description: "Академическое превосходство на французском и китайском языках."
+            title: "Двуязычные Программы",
+            description: "Академическое превосходство на французском и китайском."
           },
           slide5: {
-            title: "Культурное погружение",
+            title: "Культурное Погружение",
             description: "Празднование китайских и французских традиций."
           }
         },
         schoolName: "МЕЖДУНАРОДНАЯ КИТАЙСКАЯ ШКОЛА",
-        motto: "(Труд – Строгость – Успех)",
+        motto: "(Труд – Дисциплина – Успех)",
         description:
-          "Среда, адаптированная с современными физическими инфраструктурами и специальными педагогическими инструментами, чтобы предоставить каждому ученику возможности для достижения своего академического и социального потенциала.",
+          "Современная образовательная среда с инновационной инфраструктурой и специализированными педагогическими инструментами.",
 
         overlay: {
-          line1: "Современная и особенная школа,",
-          line2: "Качественное обучение,",
-          line3: "Обеспечение трудоустройства,",
-          line4: "Гарантированное профессиональное будущее для наших детей."
+          line1: "Современная и уникальная школа,",
+          line2: "Качественное образование,",
+          line3: "Гарантированная занятость,",
+          line4: "Надёжное будущее для наших детей."
         },
 
         particularities: {
           title: "Наши особенности:",
-          p1: "✅ Организация летних лагерей в Китае",
-          p2: "✅ Организация тестов по китайскому языку для школьников и старшеклассников",
-          p3: "✅ Внедрение профессиональных направлений, способствующих трудоустройству",
-          p4: "✅ Подготовка поликомпетентной элиты для китайско-конголезских компаний"
+          p1: "✅ Организация каникул в Китае",
+          p2: "✅ Экзамены по китайскому языку",
+          p3: "✅ Профессиональные направления для трудоустройства",
+          p4: "✅ Подготовка многофункциональной элиты"
         },
 
         Icons: {
           title: "НАШИ ПРОГРАММЫ",
-          p1: "ОБУЧЕНИЕ",
-          p2: "СОВРЕМЕННАЯ И БЕЗОПАСНАЯ ШКОЛА",
+          p1: "ПРЕПОДАВАНИЕ",
+          p2: "МОДЕРНОЕ И БЕЗОПАСНОЕ ШКОЛЬНОЕ УЧРЕЖДЕНИЕ",
           p3: "ДОКУМЕНТЫ ДЛЯ РЕГИСТРАЦИИ"
         },
 
         activities: {
-          title: "ВНЕКЛАССНЫЕ МЕРОПРИЯТИЯ",
-          subtitle: "Ознакомьтесь с нашими последними мероприятиями",
+          title: "ВНЕУЧЕБНЫЕ МЕРОПРИЯТИЯ",
+          subtitle: "Ознакомьтесь с последними мероприятиями",
           newsTitle: "МИРОВЫЕ НОВОСТИ",
-          newsText: "Визит китайской делегации в наше учреждение"
+          newsText: "Визит китайской делегации в нашу школу"
         },
 
         title: "НАШЕ УЧРЕЖДЕНИЕ",
         welcome: "Добро пожаловать в Международную Китайскую Школу",
-        subtitle: "Воспитание превосходства и культурного разнообразия",
-        history:
-          "Наша школа была основана с целью подготовки лидеров будущего, возникла из ясного видения: предоставлять качественное, доступное и ориентированное на будущее образование. С момента основания учреждение обязалось сопровождать каждого ученика в его интеллектуальном, моральном и социальном развитии.",
-        mission:
-          "Наша миссия – воспитать ответственных граждан, открытых миру, обладающих прочными академическими, культурными и человеческими навыками.",
+        subtitle: "Развитие культурного разнообразия и качества",
+        history: "Наша школа предоставляет качественное международное образование.",
+        mission: "Наша миссия — формировать ответственных граждан мира.",
 
         events: {
-          title: "ЦЕРЕМОНИИ И СОБЫТИЯ",
-          desc:
-            "Ознакомьтесь с последними событиями, культурными праздниками и мероприятиями, организованными школой."
+          title: "СОБЫТИЯ И МЕРОПРИЯТИЯ",
+          desc: "Последние события, праздники и школьные мероприятия."
         },
 
         admission: {
           title: "Быстрое поступление",
-          subtitle: "Зарегистрируйте вашего ребёнка."
+          subtitle: "Продолжите регистрацию вашего ребёнка."
         },
 
         location: {
           title: "Наше местоположение",
-          address: "138, улица Эжена Этьена",
-          city: "Центр Плато, Браззавиль",
+          address: "ул. Эжена Этьена, 138",
+          city: "Центр плато, Браззавиль",
           phone: "05 345 66 66 / 06 615 66 66"
         }
       },
 
+     
+
       common: {
         learnMore: "Узнать больше",
         learnMoreUpper: "УЗНАТЬ БОЛЬШЕ",
-        viewMore: "СМОТРЕТЬ БОЛЬШЕ",
-        details: "ПОДРОБНОСТИ",
-        previous: "Предыдущий",
-        next: "Следующий",
+        viewMore: "УЗНАТЬ БОЛЬШЕ",
+        details: "ПОДРОБНЕЕ",
+        previous: "Назад",
+        next: "Далее",
         search: "Поиск...",
         documents: "документы"
       },
 
+       
       culture: {
         hero: {
           title: "Галерея и культура школы",
           description:
-            "Вспомните яркие моменты жизни нашей школы через наши публикации."
+            "Вспомните яркие моменты школьной жизни через наши публикации."
         },
         gallery: {
           subtitle: "Фотографии мероприятий",
           items: [
             "Церемония вручения дипломов",
-            "Уроки каллиграфии",
+            "Урок каллиграфии",
             "Празднование Китайского Нового года",
-            "Образовательная экскурсия в музей",
-            "Классные занятия",
+            "Учебная экскурсия в музей",
+             "Занятие в классе",
             "Школьная жизнь",
             "Культурный обмен",
             "Образовательная среда",
@@ -1208,111 +1271,123 @@ export const resources = {
         },
         videos: {
           subtitle: "Последние видео",
-          unsupported: "Ваш браузер не поддерживает тег видео.",
+          unsupported: "Ваш браузер не поддерживает воспроизведение видео.",
           items: [
-            { title: "Презентация школы", description: "Узнайте о наших мероприятиях." },
-            { title: "Спортивное событие", description: "Итоги соревнования." },
-            { title: "Культурное мероприятие", description: "Ученики демонстрируют свои таланты." },
-            { title: "Курс китайского языка", description: "Ученики изучают китайский" },
-            { title: "Школьные мероприятия", description: "Ежедневные школьные мероприятия" },
-            { title: "Образовательная программа", description: "Методы преподавания" },
-            { title: "Школьная анимация", description: "Образовательная анимация" },
-            { title: "Разговорный китайский", description: "Практика китайского языка" },
-            { title: "Празднование дня рождения", description: "Праздник для учеников" },
-            { title: "Родительское собрание", description: "Встреча школы с родителями" },
-            { title: "Спортивные мероприятия", description: "Физическая активность" },
-            { title: "Поведение учеников", description: "Дисциплина и ценности" },
-            { title: "Презентация школы", description: "Презентация учреждения" },
-            { title: "Раздача поло", description: "Выдача школьной формы" }
+            {
+              title: "Презентация школы",
+              description: "Ознакомьтесь с нашей деятельностью."
+            },
+            {
+              title: "Спортивное мероприятие",
+              description: "Краткий обзор соревнования."
+            },
+            {
+              title: "Культурный праздник",
+              description: "Ученики демонстрируют свои таланты."
+            },
+             { title: "Урок китайского языка", description: "Ученики изучают китайский язык" },
+          { title: "Школьные мероприятия", description: "Ежедневная школьная деятельность" },
+          { title: "Образовательная программа", description: "Методы обучения" },
+          { title: "Школьная анимация", description: "Образовательная анимация" },
+          { title: "Разговор на китайском", description: "Практика китайской речи" },
+          { title: "Празднование дня рождения", description: "Праздник учеников" },
+          { title: "Родительское собрание", description: "Встреча школы с родителями" },
+          { title: "Спортивные мероприятия", description: "Физическая активность" },
+          { title: "Поведение учеников", description: "Дисциплина и ценности" },
+          { title: "Презентация школы", description: "Общая презентация школы" },
+         { title: "Раздача поло", description: "Раздача школьной формы" }
           ]
         },
         social: {
-          title: "Следите за нами в социальных сетях!",
-          description: "Будьте в курсе всех наших мероприятий и новостей."
+          title: "Подписывайтесь на нас в соцсетях!",
+          description:
+            "Будьте в курсе всех наших событий и новостей."
         }
       },
 
-      enseignement: {
-        title: "МЕЖДУНАРОДНАЯ КИТАЙСКАЯ ШКОЛА",
+       enseignement: {
+        title: "КИТАЙСКАЯ МЕЖДУНАРОДНАЯ ШКОЛА",
         slogan: "Открытость, превосходство и инновации.",
         subtitleProgram: "Учебная программа:",
         subtitleSchool: "Современная и безопасная школа:",
 
         programme1: "Расширенная конголезская программа",
-        programme2: "Курсы права, экономики и предпринимательства в старшей школе",
-        programme3: "Введение в управление дронами в старшей школе",
+        programme2: "Курсы права, экономики и предпринимательства в лицее",
+        programme3: "Введение в управление дронами в лицее",
         programme4: "Курсы технологий в колледже",
-        programme5: "Введение в информатику с CE1",
-        programme6: "Курсы китайского с детского сада",
+        programme5: "Введение в информатику с класса CE1",
+        programme6: "Курсы китайского языка с детского сада",
         programme7: "Клубы китайского и английского языков",
-        programme8: "Практика Ушу",
+        programme8: "Практика ушу",
 
         description:
-          "Наше учреждение предлагает современную, безопасную среду, способствующую интеллектуальному, культурному и спортивному развитию учащихся."
+          "Наше учебное заведение предлагает современную и безопасную среду, способствующую интеллектуальному, культурному и спортивному развитию учащихся."
       },
 
-      ecoleModerne: {
+       ecoleModerne: {
         title: "Современная и безопасная школа",
         subtitle: "Среда, способствующая обучению и развитию.",
 
         item1: "🤝 Динамичная педагогическая команда",
-        item2: "💡 Мастер-классы по постоянной подготовке всего персонала",
-        item3: "🎓 Подготовка учеников для поступления в китайские университеты",
-        item4: "📹 Школа под видеонаблюдением",
+        item2: "💡 Курсы повышения квалификации для персонала",
+        item3: "🎓 Подготовка учащихся к поступлению в китайские университеты",
+        item4: "📹 Видеонаблюдение в школе",
         item5: "⚽ Просторный двор с игровой площадкой",
-        item6: "❄️ Кондиционированные классы",
-        item7: "👨‍👩‍👧‍👦 Классы с ограниченным количеством учеников",
-        item8: "✏️ Одноместные парты",
-        item9: "🔬 Исследовательская лаборатория и художественная галерея",
+        item6: "❄️ Классы с кондиционерами",
+        item7: "👨‍👩‍👧‍👦 Небольшие классы",
+        item8: "✏️ Индивидуальные парты",
+        item9: "🔬 Лаборатория и художественная галерея",
         item10: "🏆 Награды лучшим ученикам",
         item11: "📚 Библиотека и компьютерный класс",
         item12: "🌐 Интернет – Wi-Fi",
-        item13: "Столовая с адаптированным меню",
+        item13: "食堂 Столовая с адаптированным меню",
 
-        values: "Мы учим уважению, терпимости и солидарности."
+        values: "Мы прививаем уважение, терпимость и солидарность."
       },
 
-      pieces: {
+       pieces: {
         headerTitle: "Мы учим уважению, терпимости и солидарности",
-        title: "Документы для регистрации/перерегистрации",
+        title: "Документы для регистрации / перерегистрации",
 
-        doc1: "1 регистрационная форма",
-        doc2: "1 копия свидетельства о рождении (конголезы, иностранцы)",
-        doc3: "2 фотографии для удостоверения личности",
-        doc4: "1 копия результатов CEPE / BEPC",
-        doc5: "1 крафт-конверт на ребёнка",
+        doc1: "1 регистрационная / перерегистрационная анкета",
+        doc2: "1 копия свидетельства о рождении (граждане Конго и иностранцы)",
+        doc3: "2 фотографии на документы",
+        doc4: "1 копия свидетельства об успешной сдаче CEPE / BEPC",
+        doc5: "1 коричневый конверт на ребёнка",
         doc6: "1 справка о посещаемости",
-        doc7: "1 справка об отсутствии задолженностей в предыдущей школе",
+        doc7: "1 справка об отсутствии задолженности из предыдущей школы",
         doc8: "1 копия паспорта, удостоверения личности или консульской карты одного из родителей",
         doc9: "1 справка о школьном обучении для новых учеников",
-        doc10: "1 медицинская справка о неприв contagious болезни, подтверждающая обязательные вакцинации",
+        doc10: "1 медицинская справка об отсутствии инфекций и обязательных прививках",
         doc11: "1 пачка бумаги A4",
-        doc12: "2 коробки мелков (белые и цветные)",
-        doc13: "1 рулон туалетной бумаги (дошкольная и начальная школа)",
+        doc12: "2 коробки мела (белого и цветного)",
+        doc13: "1 рулон туалетной бумаги (дошкольное и начальное обучение)",
 
-        specialTitle: "Для законных представителей, разведённых или раздельно проживающих:",
+        specialTitle: "Для разведённых или раздельно проживающих законных представителей:",
         specialDoc:
-          "1 копия решения о разводе / приказ о примирении / о непримирении / документ, уточняющий условия опеки над ребёнком (подписан обоими законными представителями).",
+          "1 копия решения о разводе / постановления о примирении или отказе / документа об опеке над ребёнком (подписанного обоими законными представителями).",
 
         helpBox: {
           title: "Нужна помощь?",
-          description: "Свяжитесь с секретариатом по вопросам легализации документов."
+          description: "Свяжитесь с секретариатом по любым вопросам о легализации документов."
         }
       },
 
-      footer: {
+       
+       footer: {
         contactTitle: "Контакты",
         phone: "Телефоны",
         whatsapp: "Whatsapp",
-        email: "Эл. почта",
+        email: "Email",
         addressTitle: "Адрес",
-        address: "138, улица Эжена Этьена, Центр Плато, Браззавиль",
+        address: "138, улица Эжена Этьена, центр Плато, Браззавиль",
         web: "Веб",
         tiktok: "TIK TOK : @beau_compus_eic",
-        partners: "Наши партнёры"
+        partners: "Наши партнёры",
+        legal: "Все права защищены"
       },
 
-      contact: {
+         contact: {
         description: "Вы можете отправить нам сообщение через эту форму.",
         name: "Ваше имя",
         email: "Ваш email",
@@ -1322,118 +1397,133 @@ export const resources = {
         error: "Ошибка при отправке ❌"
       },
 
-      about: {
-        heroAlt: "Игровой двор Международной Китайской Школы",
-        logoAlt: "Логотип Международной Китайской Школы",
+       about: {
+      heroAlt: "Школьный двор Китайской международной школы",
+      logoAlt: "Логотип Китайской международной школы",
 
-        title: "Добро пожаловать в Международную Китайскую Школу",
-        slogan: "«Мы учим уважению, терпимости и солидарности»",
+      title: "Добро пожаловать в Китайскую международную школу",
+      slogan: "«Мы обучаем уважению, толерантности и солидарности»",
 
-        missionTitle: "🎯 Наша миссия",
-        mission: {
-          li1: "Качественное обучение, адаптированное к конголезским программам и обогащённое китайскими методами.",
-          li2: "Обеспечение трудоустройства через местные профессиональные направления.",
-          li3: "Гарантированное профессиональное будущее для поступления в китайские или африканские университеты.",
-          li4: "Безопасная и стимулирующая среда для всестороннего развития каждого ученика."
-        },
-
-        infrastructureTitle: "🏗️ Наша инфраструктура",
-        infrastructure: {
-          li1: "Кондиционированные классы с одноместными партами.",
-          li2: "Компьютерный класс, библиотека, исследовательская лаборатория и художественная галерея.",
-          li3: "Просторный двор с игровой площадкой, горкой и зелёной зоной.",
-          li4: "Wi-Fi подключение.",
-          li5: "Клубы: китайский, английский, Ушу, музыка."
-        },
-
-        teamTitle: "👨‍🏫 Наш педагогический состав",
-        teamText:
-          "Динамичные преподаватели, регулярно проходящие обучение, преданные педагогическому совершенству и безопасности учеников (видеонаблюдение).",
-
-        contactTitle: "📍 Контакты",
-        contact: {
-          addressLabel: "Адрес:",
-          address: "138, улица Эжена Этьена, Центр Плато, Браззавиль",
-          phoneLabel: "Телефоны:",
-          phone: "05 345 66 66 / 06 615 66 66 (WhatsApp)",
-          emailLabel: "Эл. почта:",
-          email: "ecoleinternationalec@gmail.com"
-        },
-
-        registrationTitle: "📄 Регистрация",
-        registrationText:
-          "Необходимые документы: регистрационная форма, фотографии, свидетельство о рождении, медицинская справка, справка об отсутствии задолженностей. Для разведённых родителей: решение + соглашение об опеке.",
-
-        discount: "💡 Семейная скидка: -10% для семей с 3 и более детьми.",
-        discountNote: "Примечание: родители, имеющие",
-        children: "детей и более",
-        benefit: "получают",
-        discountPercent: "скидку 10%",
-        onMonthlyFees: "на ежемесячную плату."
+      missionTitle: "🎯 Наша миссия",
+      mission: {
+        li1: "Качественное образование, адаптированное к конголезским программам и обогащённое китайскими методами обучения.",
+        li2: "Гарантированная трудоустроенность благодаря местным профессиональным направлениям.",
+        li3: "Надёжное профессиональное будущее с возможностью поступления в китайские или африканские университеты.",
+        li4: "Безопасная и стимулирующая среда для всестороннего развития каждого ученика."
       },
 
-      programs: {
-        heroAlt: "Ученики в классе Международной Китайской Школы",
-        logoAlt: "Логотип Международной Китайской Школы",
-        title: "Наши образовательные программы",
-        intro: "Полные, инновационные программы, адаптированные к каждому возрасту для подготовки лидеров будущего.",
-        featureTitle: "📚 Расширенная конголезская программа",
-        featureText: "Обогащена современными дисциплинами с детского сада до старшей школы.",
-        maternelleTitle: "🧒 Детский сад и начальная школа (От яслей до CM2)",
-        maternelleList: [
-          "Курсы информатики с детского сада.",
-          "Введение в управление дронами с CE1.",
-          "Клубы китайского и английского языков.",
-          "Практика Ушу.",
-          "Контролируемые художественные и спортивные мероприятия."
-        ],
-        lyceeTitle: "🎓 Колледж и старшая школа (6–12 классы)",
-        lyceeList: [
-          "Курсы права, экономики и предпринимательства.",
-          "Курсы технологий.",
-          "Подготовка к экзаменам DETAI.",
-          "Местные профессиональные направления.",
-          "Организация тестов по китайскому языку."
-        ],
-        particularitiesTitle: "✨ Наши особенности",
-        particularitiesList: [
-          "Летние лагеря в Китае.",
-          "Профессиональные направления для местного трудоустройства.",
-          "Подготовка поликомпетентной элиты для китайско-конголезских компаний.",
-          "Награды лучшим ученикам."
-        ],
-        pricingTitle: "💰 Школьные тарифы 2025–2026",
-        tableHeaders: ["Уровень", "Регистрация", "Ежемесячно", "Годовой"],
+      infrastructureTitle: "🏗️ Наша инфраструктура",
+      infrastructure: {
+        li1: "Классы с кондиционерами и индивидуальными партами.",
+        li2: "Компьютерный класс, библиотека, исследовательская лаборатория и художественная галерея.",
+        li3: "Просторный двор с игровой площадкой, горками и зелёной зоной.",
+        li4: "Интернет Wi-Fi.",
+        li5: "Клубы: китайский язык, английский язык, ушу, музыка."
+      },
 
-        rowGarderie: "Ясли",
-        rowP1P3: "P1, P2, P3",
-        rowCPCE: "CP, CE, CM1",
-        rowCM2: "CM2",
-        row6e5e4e: "6,5,4 классы",
-        row3e: "3 класс",
-        rowSeconde: "10 класс",
-        rowPremiere: "11 класс",
-        rowTerminale: "12 класс",
+      teamTitle: "👨‍🏫 Наш педагогический коллектив",
+      teamText:
+        "Динамичные преподаватели, регулярно проходящие обучение, нацеленные на педагогическое совершенство и безопасность учащихся (видеонаблюдение).",
 
-        descInscription: "Регистрационный взнос (новые ученики)",
-        descReinscription: "Повторная регистрация (старые ученики)",
-        descSupplementaires: "Дополнительные сборы",
-        descExamens: "Государственные экзамены",
-        descFeteNoel: "Рождественский праздник",
-        descSeptembre: "Сентябрьская плата",
-        descMensuels: "Ежемесячная плата",
-        descAnnuels: "Годовая плата",
+      contactTitle: "📍 Контакты",
+      contact: {
+        addressLabel: "Адрес:",
+        address: "ул. Эжена Этьена, 138, центр города, Браззавиль",
+        phoneLabel: "Телефоны:",
+        phone: "05 345 66 66 / 06 615 66 66 (WhatsApp)",
+        emailLabel: "Эл. почта:",
+        email: "ecoleinternationalec@gmail.com"
+      },
 
-        additionalFeesNote: "11 500 **",
+      registrationTitle: "📄 Регистрация",
+      registrationText:
+        "Необходимые документы: регистрационная форма, фотографии, свидетельство о рождении, медицинская справка, справка о благонадёжности. Для разведённых родителей: судебное решение и соглашение об опеке.",
 
-        discountNote: "Примечание: родители, имеющие",
-        children: "детей и более",
-        benefit: "получают",
-        discountPercent: "скидку 10%",
-        onMonthlyFees: "на ежемесячную плату."
-      }
+      discount: "💡 Семейная скидка: −10% для семей с 3 детьми на иждивении.",
+      discountNote: "Примечание: Родители, имеющие",
+      children: "детей или более",
+      benefit: "получают",
+      discountPercent: "скидку 10%",
+      onMonthlyFees: "на ежемесячную оплату.",
+      note: "📌 Дополнительные сборы: DETAI (10 000 F), Рождество (10 000 F), Экскурсия (3 000 F), Страховка (1 000 F)."
+    },
+
+    programs: {
+      heroAlt: "Ученики в классе Международной китайской школы",
+      logoAlt: "Логотип Международной китайской школы",
+      title: "Наши образовательные программы",
+      intro: "Комплексные, инновационные программы для всех возрастов для подготовки лидеров будущего.",
+      featureTitle: "📚 Расширенная конголезская программа",
+      featureText: "Обогащённая современными предметами от детского сада до старшей школы.",
+      maternelleTitle: "🧒 Детский сад и начальная школа",
+      maternelleList: [
+        "Компьютерные классы с детского сада.",
+        "Введение в управление дронами со 2-го класса.",
+        "Китайские и английские клубы.",
+        "Практика ушу.",
+        "Художественные и спортивные мероприятия."
+      ],
+      lyceeTitle: "🎓 Средняя и старшая школа (6–12 классы)",
+      lyceeList: [
+        "Курсы права, экономики и предпринимательства.",
+        "Технологические курсы.",
+        "Подготовка к экзаменам DETAI.",
+        "Местные профессиональные направления.",
+        "Организация тестов по китайскому языку."
+      ],
+      particularitiesTitle: "✨ Наши особенности",
+      particularitiesList: [
+        "Летние лагеря в Китае.",
+        "Профессиональные направления для трудоустройства.",
+        "Подготовка многопрофильной элиты.",
+        "Награды лучшим ученикам."
+      ],
+      pricingTitle: "💰 Школьные сборы 2025–2026",
+      tableHeaders: ["Уровень", "Регистрация", "Месячный", "Годовой"],
+      tableBody: [
+        ["Детский сад", "Детский сад", "35 000 F", "40 000 F", "380 000 F"],
+        ["P1–P3", "Начальная школа", "35 000 F", "40 000 F", "380 000 F"],
+        ["CP–CM1", "Начальная школа", "35 000 F", "40 000 F", "380 000 F"],
+        ["CM2", "Начальная школа", "35 000 F", "50 000 F", "475 000 F"],
+        ["6–4", "Средняя школа", "35 000 F", "60 000 F", "570 000 F"],
+        ["3", "Средняя школа", "40 000 F", "65 000 F", "617 000 F"],
+        ["10 класс", "Старшая школа", "40 000 F", "70 500 F", "665 500 F"],
+        ["11 класс", "Старшая школа", "40 000 F", "80 000 F", "760 000 F"],
+        ["12 класс", "Старшая школа", "40 000 F", "100 000 F", "950 000 F"]
+      ],
+      
+      // Метки строк таблицы
+      rowGarderie: "Детский сад",
+      rowP1P3: "P1, P2, P3",
+      rowCPCE: "CP, CE, CM1",
+      rowCM2: "CM2",
+      row6e5e4e: "6–4",
+      row3e: "3",
+      rowSeconde: "10 класс",
+      rowPremiere: "11 класс",
+      rowTerminale: "12 класс",
+      
+      // Описания таблицы (китайский текст в скобках)
+      descInscription: "Регистрационный сбор (新生)",
+      descReinscription: "Повторная регистрация (旧生)",
+      descSupplementaires: "Дополнительные сборы (学杂费)",
+      descExamens: "Государственные экзамены (国考费)",
+      descFeteNoel: "Рождественская вечеринка (圣诞派对)",
+      descSeptembre: "Школьные сборы за сентябрь (9月学费)",
+      descMensuels: "Ежемесячная плата (月学费)",
+      descAnnuels: "Годовая оплата обучения (学费合计)",
+      
+      // Примечание о дополнительных сборах
+      additionalFeesNote: "11 500 **",
+      
+      // Текст о скидке
+      discountNote: "Примечание: Родители, имеющие",
+      children: "детей или более",
+      benefit: "получают",
+      discountPercent: "скидку 10%",
+      onMonthlyFees: "на ежемесячную оплату.",
+      note: "📌 Дополнительные сборы: DETAI (10 000 F), Рождество (10 000 F), Экскурсия (3 000 F), Страховка (1 000 F)."
+    }
     }
   }
 };
-
-
