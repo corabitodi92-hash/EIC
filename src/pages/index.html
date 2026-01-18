@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>École Internationale Chinoise - Brazzaville</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px 0;
+    }
+
+    .header .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .logo h1 {
+      font-size: 1.2rem;
+      color: #c00;
+      font-weight: 700;
+    }
+
+    .nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+      padding: 8px 12px;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #c00;
+      border-bottom: 2px solid #c00;
+    }
+
+    .btn-login {
+      background: #003366;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn-login:hover {
+      background: #002244;
+    }
+
+    /* Hero Banner */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      margin: 20px 0;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-overlay h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero-overlay p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .btn-hero {
+      background: #ff6b6b;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn-hero:hover {
+      background: #e55c5c;
+    }
+
+    /* Sections principales */
+    .main-sections {
+      display: flex;
+      gap: 20px;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .section-box {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    .section-box h3 {
+      color: #c00;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .section-box p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .program-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .program-card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .program-card i {
+      font-size: 2rem;
+      color: #c00;
+      margin-bottom: 10px;
+    }
+
+    .program-card h4 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .program-card a {
+      display: inline-block;
+      background: #ff6b6b;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+
+    .program-card a:hover {
+      background: #e55c5c;
+    }
+
+    /* Footer */
+    .footer {
+      background: #003366;
+      color: white;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    .footer .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .footer-logo {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .footer-logo img {
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .footer-logo p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-links h4 {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-social {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-social h4 {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #002244;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #003366;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #002244;
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header .container {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .hero {
+        height: 300px;
+      }
+
+      .hero-overlay h2 {
+        font-size: 2rem;
+      }
+
+      .main-sections {
+        flex-direction: column;
+      }
+
+      .footer .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="https://via.placeholder.com/40?text=EIC" alt="Logo École Internationale Chinoise" />
+        <h1>中文国际学校</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="active">ACCUEIL</a></li>
+          <li><a href="#">À PROPOS DE NOUS</a></li>
+          <li><a href="#">PROGRAMMES</a></li>
+          <li><a href="#">VIE SCOLAIRE</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn-login">SE CONNECTER</a>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <img src="https://via.placeholder.com/1200x500?text=Bienvenue+à+l'École+Internationale+Chinoise" alt="Bannière École" />
+    <div class="hero-overlay">
+      <h2>BIENVENUE À L’ÉCOLE INTERNATIONALE CHINOISE</h2>
+      <p>Cultiver l’excellence dans un environnement de culture chinoise et congolaise</p>
+      <a href="#" class="btn-hero">DÉCOUVRIR NOTRE ÉCOLE</a>
+    </div>
+  </div>
+
+  <!-- Main Sections -->
+  <div class="main-sections">
+    <!-- Section 1: Nos Programmes -->
+    <div class="section-box">
+      <h3>NOS PROGRAMMES</h3>
+      <p>Notre programme éducatif combine les standards internationaux avec une immersion culturelle chinoise.</p>
+      <div class="program-cards">
+        <div class="program-card">
+          <i>📚</i>
+          <h4>COURS NUMÉRIQUES</h4>
+          <a href="#">En savoir plus</a>
+        </div>
+        <div class="program-card">
+          <i>🌍</i>
+          <h4>ÉCHANGE CULTUREL</h4>
+          <a href="#">En savoir plus</a>
+        </div>
+        <div class="program-card">
+          <i>✍️</i>
+          <h4>ÉTUDES EXTRA-SCOLAIRES</h4>
+          <a href="#">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Activités Extrascolaires -->
+    <div class="section-box">
+      <h3>ACTIVITÉS EXTRASCOLAIRES</h3>
+      <p>Des activités variées pour développer les talents de nos élèves : arts, sports, technologie.</p>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px;">
+        <img src="https://via.placeholder.com/80?text=Flag" alt="Drapeau" style="border-radius: 4px;" />
+        <img src="https://via.placeholder.com/80?text=Photo" alt="Activité" style="border-radius: 4px;" />
+        <img src="https://via.placeholder.com/80?text=Photo" alt="Activité" style="border-radius: 4px;" />
+      </div>
+      <a href="#" style="display: inline-block; margin-top: 15px; background: #ff6b6b; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none;">VOIR PLUS</a>
+    </div>
+
+    <!-- Section 3: Actualités -->
+    <div class="section-box">
+      <h3>ACTUALITÉS</h3>
+      <p>Dernières nouvelles de l’école, événements, réussites des élèves.</p>
+      <div style="margin-top: 15px; padding: 15px; background: #f0f0f0; border-radius: 6px;">
+        <strong>24 Décembre 2025</strong><br/>
+        <em>Les élèves de CM2 remportent le concours national de calligraphie chinoise !</em>
+      </div>
+      <div style="margin-top: 10px; padding: 15px; background: #f0f0f0; border-radius: 6px;">
+        <strong>20 Décembre 2025</strong><br/>
+        <em>Nouveau partenariat avec l’Institut Français pour des ateliers bilingues.</em>
+      </div>
+      <a href="#" style="display: inline-block; margin-top: 15px; background: #ff6b6b; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none;">TOUTES LES ACTUALITÉS</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="https://via.placeholder.com/50?text=EIC" alt="Logo École Internationale Chinoise" />
+        <p>École Internationale Chinoise — Brazzaville<br/>
+        138, Rue Eugène Etienne, Plateau Centre ville<br/>
+        Tél: 05 345 66 66 | Email: ecoleinternationalec@gmail.com</p>
+      </div>
+      <div class="footer-links">
+        <h4>LIENS UTILES</h4>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Programmes</a></li>
+          <li><a href="#">Vie scolaire</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>SUIVEZ-NOUS</h4>
+        <div class="social-icons">
+          <a href="#">F</a>
+          <a href="#">I</a>
+          <a href="#">T</a>
+          <a href="#">Y</a>
+        </div>
+        <p style="margin-top: 15px; font-size: 0.9rem;">
+          © 2025 École Internationale Chinoise. Tous droits réservés.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Politique de confidentialité • Mentions légales • CGU
+    </div>
+  </footer>
+
+</body>
+</html>

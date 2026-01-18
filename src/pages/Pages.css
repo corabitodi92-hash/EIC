@@ -1,0 +1,18 @@
+.section {
+  padding: 80px 40px;
+  background: white;
+}
+
+.section h1,
+.section h2 {
+  color: var(--blue-main);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+}

@@ -1,0 +1,125 @@
+/* --- CONFIGURATION GÉNÉRALE --- */
+.tarifs-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Inter', sans-serif;
+  color: #0d1b3e;
+}
+
+.tarifs-page h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  color: #0d1b3e;
+  text-transform: uppercase;
+}
+
+.tarifs-page h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #c0392b;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* --- LE TABLEAU --- */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Scroll horizontal pour mobile */
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  margin-bottom: 30px;
+}
+
+/* Indicateur de scroll pour aider l'utilisateur sur mobile */
+.table-wrapper::after {
+  content: "↔ Glissez pour voir tous les tarifs";
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #c0392b;
+  background: #fff5f5;
+  border-top: 1px solid #e2e8f0;
+}
+
+@media (min-width: 1024px) {
+  .table-wrapper::after { display: none; }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px; /* Force l'espace pour 10 colonnes */
+}
+
+th {
+  background-color: #0d1b3e;
+  color: white;
+  padding: 18px 12px;
+  font-size: 0.85rem;
+  text-align: center;
+  border: 1px solid #1a2a4e;
+}
+
+td {
+  padding: 15px 12px;
+  text-align: center;
+  border: 1px solid #edf2f7;
+  font-size: 0.95rem;
+}
+
+/* Colonne de désignation (la première) */
+td:first-child {
+  text-align: left;
+  font-weight: 600;
+  background-color: #f8fafc;
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  border-right: 2px solid #e2e8f0;
+}
+
+/* Ligne Total en bas */
+.total {
+  background-color: #f1f5f9;
+  font-weight: bold;
+}
+
+.total td {
+  color: #c0392b;
+  font-size: 1.05rem;
+}
+
+/* Ligne spécifique pour le colSpan */
+tr td[colSpan="9"] {
+  text-align: center;
+  font-style: italic;
+  color: #4a5568;
+  background-color: #fdfdfd;
+}
+
+/* --- NOTE DE BAS DE PAGE --- */
+.note {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 5px solid #c0392b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.note strong {
+  color: #c0392b;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .tarifs-page h1 { font-size: 1.4rem; }
+  .tarifs-page h2 { font-size: 1.1rem; }
+  .tarifs-page { padding: 0 10px; }
+}

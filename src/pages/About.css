@@ -1,0 +1,166 @@
+.about-page {
+  background-color: #ffffff;
+}
+
+/* Hero Section */
+.about-hero {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero-slogan {
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 800px;
+}
+
+/* Layout */
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Identity Section */
+.identity-section {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.logo-badge img {
+  width: 200px;
+  height: auto;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
+
+.section-title-navy {
+  color: #0d1b3e;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.accent-bar {
+  width: 60px;
+  height: 4px;
+  background-color: #c0392b;
+  margin-bottom: 25px;
+}
+
+.modern-list {
+  list-style: none;
+  padding: 0;
+}
+
+.modern-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 25px;
+}
+
+.modern-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* Split Grid */
+.info-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.info-block {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.discount-highlight {
+  margin-top: 30px;
+  background: #0d1b3e;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-left: 5px solid #c0392b;
+}
+
+/* Registration & Contact */
+.registration-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #ffffff;
+}
+
+.registration-card {
+  background: #c0392b;
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.section-title-white {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+
+.contact-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  background: #f0f2f5;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Responsivité */
+@media (max-width: 900px) {
+  .identity-section, .info-split-grid, .registration-contact {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .accent-bar { margin: 0 auto 25px; }
+  .modern-list li { text-align: left; }
+  .contact-item { text-align: left; }
+}

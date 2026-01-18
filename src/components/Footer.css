@@ -1,0 +1,161 @@
+:root {
+  --footer-bg: #0d1b3e; /* Bleu marine profond tiré de la maquette */
+  --footer-text: #ffffff;
+  --footer-accent: #e67e22; /* Orange pour les rappels du logo */
+  --footer-border: rgba(255, 255, 255, 0.1);
+}
+
+.site-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+
+/* Ligne supérieure décorative */
+.footer-top-border {
+  height: 4px;
+  background: linear-gradient(90deg, var(--footer-accent), #c0392b);
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 20px 20px;
+}
+
+/* Grille principale */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Titres des sections */
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40px;
+  height: 2px;
+  background-color: var(--footer-accent);
+}
+
+/* Section Logo et Contact */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-logo {
+  max-width: 120px;
+  height: auto;
+  border-radius: 8px;
+  background: white;
+  padding: 5px;
+}
+
+.footer-info p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-info strong {
+  color: var(--footer-accent);
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Réseaux Sociaux */
+.footer-social-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-social-links svg {
+  width: 32px;
+  height: 32px;
+  padding: 7px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  fill: white;
+}
+
+.footer-social-links svg:hover {
+  background: var(--footer-accent);
+  transform: translateY(-3px);
+  fill: white;
+}
+
+/* Partenaires */
+.partner-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.footer-flag {
+  width: 40px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.partner-text {
+  font-size: 0.9rem;
+}
+
+/* Copyright */
+.footer-bottom {
+  border-top: 1px solid var(--footer-border);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Responsivité (Mobile) */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-content, .footer-social-links, .partner-item {
+    align-items: center;
+    justify-content: center;
+  }
+}

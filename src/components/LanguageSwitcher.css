@@ -1,0 +1,55 @@
+.language-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.language-select {
+  appearance: none; /* Enlève le style par défaut du navigateur */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  background-color: transparent;
+  color: #0d1b3e; /* Bleu marine comme sur la maquette */
+  border: 1.5px solid #0d1b3e;
+  padding: 6px 25px 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.language-select:hover {
+  background-color: #0d1b3e;
+  color: white;
+}
+
+/* Petite flèche personnalisée */
+.select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  pointer-events: none; /* La flèche ne doit pas bloquer le clic */
+}
+
+/* Version responsive pour le menu mobile */
+@media (max-width: 992px) {
+  .language-container {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+  .language-select {
+    font-size: 1rem;
+    padding: 10px 35px 10px 20px;
+  }
+}

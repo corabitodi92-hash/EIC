@@ -1,0 +1,163 @@
+.registration-page {
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+
+.registration-hero {
+  background: linear-gradient(rgba(13, 27, 62, 0.9), rgba(13, 27, 62, 0.9)), 
+              url('../assets/photo4.jpeg') center/cover;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.red-divider {
+  width: 60px;
+  height: 4px;
+  background: #c0392b;
+  margin: 15px auto;
+}
+
+.registration-main {
+  max-width: 1100px;
+  margin: -40px auto 60px;
+  padding: 0 20px;
+}
+
+/* Barre de progression collante */
+.sticky-progress {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #0d1b3e;
+}
+
+.progress-track {
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-thumb {
+  height: 100%;
+  background: #c0392b;
+}
+
+/* Layout Grille */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 30px;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 15px 45px 15px 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.search-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Cards Checklist */
+.checklist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.document-card {
+  background: white;
+  padding: 18px 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 4px solid transparent;
+}
+
+.document-card:hover {
+  transform: translateX(5px);
+  background: #fdfdfd;
+}
+
+.document-card.is-checked {
+  background: #eef9f1;
+  border-left-color: #27ae60;
+}
+
+.custom-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.document-card.is-checked .custom-checkbox {
+  border-color: #27ae60;
+  background: white;
+}
+
+/* Side Column */
+.instruction-card {
+  background: #0d1b3e;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  position: sticky;
+  top: 220px;
+}
+
+.instruction-line {
+  width: 40px;
+  height: 2px;
+  background: #c0392b;
+  margin: 15px 0;
+}
+
+.help-box {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 900px) {
+  .content-grid { grid-template-columns: 1fr; }
+  .registration-hero { height: auto; padding: 60px 20px; }
+}

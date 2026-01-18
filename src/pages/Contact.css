@@ -1,0 +1,134 @@
+:root {
+  --navy: #0d1b3e;
+  --crimson: #c0392b;
+  --bg-soft: #f8f9fa;
+}
+
+.contact-page-wrapper {
+  background-color: var(--bg-soft);
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.title-underline-center {
+  width: 60px;
+  height: 4px;
+  background: var(--crimson);
+  margin: 15px auto;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 40px;
+}
+
+/* Sidebar d'infos */
+.contact-info-sidebar {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  height: fit-content;
+}
+
+.contact-desc-text {
+  color: #666;
+  margin: 20px 0 30px;
+  line-height: 1.6;
+}
+
+.contact-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-detail-item {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.icon-circle {
+  background: #f0f2f5;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+/* Formulaire Main */
+.contact-form-main {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fcfcfc;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--crimson);
+}
+
+.btn-submit-contact {
+  background: var(--crimson);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}

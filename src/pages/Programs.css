@@ -1,0 +1,231 @@
+/* --- VARIABLES --- */
+:root {
+  --primary-blue: #0d1b3e;
+  --accent-red: #c0392b;
+  --text-gray: #4a5568;
+  --light-bg: #f7fafc;
+  --white: #ffffff;
+  --border-color: #e2e8f0;
+}
+
+.programs-page-wrapper {
+  background-color: var(--light-bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--primary-blue);
+  line-height: 1.5;
+}
+
+/* --- HERO SECTION --- */
+.programs-hero {
+  position: relative;
+  height: 35vh; /* Hauteur réduite pour plus d'efficacité */
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 27, 62, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text-box h1 {
+  color: var(--white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.accent-bar {
+  width: 60px;
+  height: 4px;
+  background: var(--accent-red);
+  margin: 15px auto 0;
+}
+
+/* --- LAYOUT ÉQUILIBRÉ --- */
+.programs-content-flow {
+  max-width: 1140px;
+  margin: -30px auto 60px; /* Surplomb léger et pro */
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* ESPACEMENT NORMAL PROFESSIONNEL */
+  position: relative;
+  z-index: 10;
+}
+
+/* --- BLOCS DE CONTENU --- */
+.intro-inner-card, .curriculum-item, .pricing-card {
+  background: var(--white);
+  padding: 30px; /* Padding standardisé */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border-color);
+}
+
+.intro-inner-card {
+  text-align: center;
+}
+
+.institution-logo {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.main-intro-text {
+  font-size: 1.05rem;
+  color: var(--text-gray);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* --- CURRICULUM --- */
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.curriculum-item {
+  border-top: 4px solid var(--primary-blue);
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 15px;
+}
+
+.icon-sphere { font-size: 1.5rem; }
+
+.item-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.styled-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+/* --- FEATURES --- */
+.features-container h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.features-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.feature-pill {
+  background: #edf2f7;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- TABLEAU FINANCIER --- */
+.pricing-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pricing-header h2 { font-size: 1.6rem; margin: 0; }
+
+.currency-hint {
+  color: var(--accent-red);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.table-responsive-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.scroll-indicator {
+  display: none;
+  background: #fff5f5;
+  color: var(--accent-red);
+  padding: 8px;
+  text-align: center;
+  font-size: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.institution-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px; /* Largeur normale pour éviter le tassement */
+}
+
+.institution-table th {
+  background: #03101d;
+  padding: 15px;
+  text-align: left;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.institution-table td {
+  padding: 15px;
+  border-bottom: 1px solid #edf2f7;
+  font-size: 0.95rem;
+}
+
+/* --- NOTE --- */
+.legal-note {
+  margin-top: 30px;
+  background: #fcfcfc;
+  padding: 20px;
+  border: 1px dashed var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.9rem;
+}
+
+.info-badge {
+  background: var(--primary-blue);
+  color: white;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .programs-content-flow { margin-top: -20px; gap: 30px; }
+  .hero-text-box h1 { font-size: 1.6rem; }
+  .scroll-indicator { display: block; }
+}

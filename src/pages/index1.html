@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>École Internationale Chinoise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ---- Réinitialisation de base ---- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      background-color: #fff;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ---- Palette de couleurs ---- */
+    :root {
+      --navy: #0a2540;
+      --white: #ffffff;
+      --orange: #ff6b35;
+      --light-gray: #f5f7fa;
+    }
+
+    /* ---- Header ---- */
+    header {
+      background-color: var(--navy);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .language-selector {
+      background: none;
+      border: 1px solid var(--white);
+      color: var(--white);
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* ---- Grille principale (deux lignes) ---- */
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* ---- Blocs génériques ---- */
+    .block {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .hero-image {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 100%;
+      background-color: var(--navy); /* fallback si image manquante */
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-image h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.75rem;
+      font-weight: 700;
+    }
+
+    .hero-image p {
+      font-size: 1.1rem;
+      margin-bottom: 1.25rem;
+      max-width: 80%;
+    }
+
+    .btn {
+      background-color: var(--orange);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    /* ---- Deuxième ligne : Les 3 piliers ---- */
+    .pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      height: 100%;
+    }
+
+    .pillar {
+      background-color: var(--light-gray);
+      padding: 1.25rem;
+      border-radius: 8px;
+      text-align: center;
+      flex: 1;
+    }
+
+    .pillar h3 {
+      margin: 0.75rem 0;
+      color: var(--navy);
+    }
+
+    /* ---- Bloc actualités vertical (sandwich) ---- */
+    .news-block {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      height: 100%;
+    }
+
+    .news-item img {
+      border-radius: 6px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .news-center {
+      background-color: var(--light-gray);
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1;
+    }
+
+    .news-center h3 {
+      margin-bottom: 0.75rem;
+      color: var(--navy);
+    }
+
+    .news-list {
+      list-style: none;
+    }
+
+    .news-list li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .news-list time {
+      color: var(--navy);
+      font-weight: 600;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      background-color: var(--navy);
+      color: var(--white);
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    .footer-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.4rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .social-icons a {
+      background: rgba(255,255,255,0.1);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ---- Responsive : tablette & mobile ---- */
+    @media (max-width: 992px) {
+      .row {
+        grid-template-columns: 1fr;
+      }
+      .hero-image h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <div class="logo">École Internationale Chinoise | 国际中文学校</div>
+    <ul class="nav-links">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À Propos de Nous</a></li>
+      <li><a href="#">Programmes</a></li>
+      <li><a href="#">Vie Étudiante</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="language-selector">FR</button>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+    <!-- LIGNE 1 -->
+    <div class="row">
+      <!-- Colonne 1 : Texte d'introduction -->
+      <div class="block">
+        <h2>NOTRE ÉTABLISSEMENT</h2>
+        <p>
+          Fondée sur les principes de l'excellence académique et de la richesse culturelle, l'École Internationale Chinoise offre un environnement d'apprentissage unique où les élèves développent non seulement des compétences linguistiques solides, mais aussi une ouverture d'esprit et une compréhension profonde des cultures du monde.
+        </p>
+      </div>
+
+      <!-- Colonne 2 : Grande image héro -->
+      <div class="hero-image">
+        <h1>BIENVENUE À L'ÉCOLE INTERNATIONALE CHINOISE</h1>
+        <p>Cultivez l'excellence dans un cadre multiculturel.</p>
+        <a href="#" class="btn">Découvrir</a>
+      </div>
+
+      <!-- Colonne 3 : Image du bâtiment -->
+      <div>
+        <img src="https://via.placeholder.com/400x500/0a2540/ffffff?text=Bâtiment+de+l'école" alt="Bâtiment de l'école" />
+      </div>
+    </div>
+
+    <!-- LIGNE 2 -->
+    <div class="row">
+      <!-- Colonne 1 : Intro programmes -->
+      <div class="block">
+        <h2>NOS PROGRAMMES</h2>
+        <p>
+          Nos programmes pédagogiques sont conçus pour offrir une éducation complète et équilibrée, centrée sur le développement intellectuel, social et émotionnel de chaque élève.
+        </p>
+      </div>
+
+      <!-- Colonne 2 : Les 3 piliers -->
+      <div class="pillars">
+        <div class="pillar">
+          <div>📚</div>
+          <h3>CURSUS BILINGUE</h3>
+          <p>Maîtrisez le français et le chinois grâce à un programme d'immersion progressive dès la maternelle.</p>
+          <a href="#" class="btn">En savoir plus</a>
+        </div>
+        <div class="pillar">
+          <div>🌍</div>
+          <h3>ÉCHANGE CULTUREL</h3>
+          <p>Développez votre sensibilité interculturelle à travers des projets collaboratifs et des voyages.</p>
+          <a href="#" class="btn">En savoir plus</a>
+        </div>
+        <div class="pillar">
+          <div>🎨</div>
+          <h3>ACTIVITÉS EXTRASCOLAIRES</h3>
+          <p>Découvrez vos talents grâce à notre large gamme d'activités sportives, artistiques et scientifiques.</p>
+          <a href="#" class="btn">En savoir plus</a>
+        </div>
+      </div>
+
+      <!-- Colonne 3 : Actualités (sandwich) -->
+      <div class="news-block">
+        <div class="news-item">
+          <img src="https://via.placeholder.com/400x200/ff6b35/ffffff?text=Nouvel+An+Chinois" alt="Nouvel An Chinois" />
+        </div>
+        <div class="news-center">
+          <h3>DERNIÈRES NOUVELLES</h3>
+          <ul class="news-list">
+            <li><time>05/12/2025</time> : Grand Gala de Noël</li>
+            <li><time>15/12/2025</time> : Voyage en Chine (4e)</li>
+            <li><time>20/12/2025</time> : Concours de calligraphie</li>
+          </ul>
+        </div>
+        <div class="news-item">
+          <img src="https://via.placeholder.com/400x200/0a2540/ffffff?text=Championnat+de+Football" alt="Championnat de football" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="logo">École Internationale Chinoise | 国际中文学校</div>
+        <p>L'École Internationale Chinoise forme des citoyens du monde bilingues et ouverts d'esprit.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Liens rapides</h3>
+        <ul class="footer-links">
+          <li><a href="#">Mentions Légales</a></li>
+          <li><a href="#">Politique de Confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>123 Rue de l'Éducation<br>75000 Paris, France</p>
+        <p>Tél : +33 1 23 45 67 89<br>Email : contact@ecole-chinoise.fr</p>
+      </div>
+      <div class="footer-section">
+        <h3>Réseaux sociaux</h3>
+        <div class="social-icons">
+          <a href="#">f</a>
+          <a href="#">ig</a>
+          <a href="#">yt</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

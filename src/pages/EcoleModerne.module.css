@@ -1,0 +1,105 @@
+.pageWrapper {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(rgba(13, 27, 62, 0.85), rgba(13, 27, 62, 0.85)), 
+              url('../assets/hero.jpeg') center/cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background: #c0392b;
+  margin: 15px auto;
+}
+
+.mainContent {
+  max-width: 1200px;
+  margin: -50px auto 60px; /* Chevauchement élégant sur le hero */
+  padding: 0 20px;
+}
+
+.specsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.specCard {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.specCard:hover {
+  transform: translateY(-5px);
+  border-bottom: 3px solid #c0392b;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.specCard p {
+  color: #0d1b3e;
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.valuesSection {
+  margin-top: 60px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  border-left: 5px solid #0d1b3e;
+}
+
+.valuesDecor {
+  position: absolute;
+  top: 0; right: 0;
+  width: 100px; height: 100px;
+  background: #c0392b;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  opacity: 0.1;
+}
+
+.valuesSection p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 { font-size: 1.8rem; }
+  .specsGrid { grid-template-columns: 1fr; }
+}
