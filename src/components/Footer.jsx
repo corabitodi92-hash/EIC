@@ -6,6 +6,19 @@ import congoFlag from "../assets/drapeau.png";
 
 // Icônes sociaux SVG (Uniquement ceux visibles sur la maquette pour plus de clarté)
 const socialIcons = {
+   instagram: (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5Zm4.25 3.25a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Zm5.25-.88a1.12 1.12 0 1 1-2.25 0 1.12 1.12 0 0 1 2.25 0Z"/>
+  </svg>
+),
+
+linkedin: (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05A4.2 4.2 0 0 1 17.6 8.8c4 0 4.7 2.6 4.7 6V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V9Z"/>
+  </svg>
+),
+
+
   facebook: (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
       <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
@@ -70,6 +83,26 @@ export default function Footer() {
           <div className="footer-section">
             <h3 className="footer-title">{t("footer.web")}</h3>
             <div className="footer-social-links">
+
+              <a
+                href="https://www.instagram.com/ecoleinternationalechinoise"
+                target="_blank"
+                 rel="noreferrer"
+                 aria-label="Instagram"
+                  >
+                {socialIcons.instagram}
+                </a>
+
+                <a
+                href="https://www.linkedin.com/company/ecole-internationale-chinoise"
+                target="_blank"
+                rel="noreferrer"
+                 aria-label="LinkedIn"
+                  >
+                  {socialIcons.linkedin}
+              </a>
+
+
               <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
                 {socialIcons.facebook}
               </a>
