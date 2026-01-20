@@ -3,6 +3,11 @@ import { useTranslation } from "react-i18next";
 import "./Footer.css";
 import logo from "../assets/logo.jpeg";
 import congoFlag from "../assets/drapeau.png";
+import logoInstitutFrancais from "../assets/Logo_InstitutFrancais.png";
+import logoUniversiteMarien from "../assets/Logo_UniversitéMarienNGouabie.png";
+import logoConfucius from "../assets/Institut_Confucius_logo.png";
+import logoEmbassade from "../assets/Embassade.png";
+
 
 // Icônes sociaux SVG (Uniquement ceux visibles sur la maquette pour plus de clarté)
 const socialIcons = {
@@ -118,16 +123,30 @@ export default function Footer() {
           {/* Colonne 3 : Partenaires / Institutions */}
           <div className="footer-section">
             <h3 className="footer-title">{t("footer.partners")}</h3>
-            <div className="footer-partners">
-              <div className="partner-item">
-                <img 
-                  src={congoFlag} 
-                  alt="Drapeau Congo" 
-                  className="footer-flag" 
-                />
-                <span className="partner-text">EIC - République du Congo</span>
-              </div>
-            </div>
+            <div className="partner-item">
+    <img src={congoFlag} alt="Drapeau Congo" className="footer-flag" />
+    <span className="partner-text">République du Congo</span>
+  </div>
+
+  <div className="partner-item">
+    <img src={logoInstitutFrancais} alt="Institut Français" className="footer-flag" />
+    <span className="partner-text">Institut Français</span>
+  </div>
+
+  <div className="partner-item">
+    <img src={logoUniversiteMarien} alt="Université Marien Ngouabi" className="footer-flag" />
+    <span className="partner-text">Université Marien Ngouabi</span>
+  </div>
+
+  <div className="partner-item">
+    <img src={logoConfucius} alt="Institut Confucius" className="footer-flag" />
+    <span className="partner-text">Institut Confucius</span>
+  </div>
+
+  <div className="partner-item">
+    <img src={logoEmbassade} alt="Ambassade" className="footer-flag" />
+    <span className="partner-text">Ambassade</span>
+  </div>
           </div>
 
         </div>
